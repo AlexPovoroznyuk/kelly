@@ -6,6 +6,8 @@ Main style file
 
 @import "../../node_modules/normalize.css/normalize.css";
 @import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../../node_modules/magnific-popup/dist/magnific-popup.css";
+
 
 
 
@@ -13,3 +15,4 @@ Main style file
 
 @import "./components/_general.css";
 @import "./components/font-awesome.css";
+@import "./components/_header.pcss";
