@@ -1,0 +1,152 @@
+main{
+    font-size: calc(0.25vw + 5px);
+    padding-top: 5em;
+    img{
+        width: 100%;
+    }
+    .to-be{
+        position: relative;
+        margin-bottom: 9em;
+        .to-be-item{
+            position: relative;
+        }
+        .to-be-item:nth-child(1){
+            padding-top: 9em;
+        }
+        .to-be-item:nth-child(2){
+            padding-top: 4.5em;
+        }
+        .caption{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-left: 15px;
+            p{
+                font-size: 6em;
+                letter-spacing: 0.3em;
+                color: #800080;
+            }
+        }
+        .descript{
+            position: absolute;
+            bottom: 3.4em;
+            left: 15px;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .wrap{
+                width: 90%;
+                margin: 0 auto;
+            }
+            p{
+                text-align: right;
+                font-size: 2.2em;
+                color: #313131;
+                background-clip: text;
+            }
+            .special{
+                color: #2f363d;
+                font-size: 3em;
+            }
+        }
+        .to-be-item:nth-child(3){
+           .descript p{
+               text-align: left;
+           }
+           .descript .special{
+               letter-spacing: 0.9px;
+           }
+        }
+    }
+    .about-brend{
+        padding: 0 15px;
+        max-width: 775px;
+        margin: 0 auto 8em;
+        p{
+            font-size: 1.8em;
+            text-align: justify;
+            color: #7e7e7e;
+        }
+        .caption{
+            p{
+                font-size: 4.6em; 
+                color: #2a3137;
+                text-align: center;
+            }
+        }
+        button{
+            background: transparent;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            outline: none;
+            cursor: pointer;
+            span{
+               color: #9d74a0; 
+               font-size: 1.8em;
+            }
+        }
+    }
+    .offer{
+        .caption{
+            font-size: 5em;
+            color: #38404a;
+        }
+        p{
+            font-size: 2em;
+            color: #9d74a0;
+            letter-spacing: 0.5px;
+        }
+        .product-item{
+            border: 1px solid black;
+            width: 50%;
+            padding: 4.5em 10px 3em;
+            .stars{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 2em;
+                i{
+                    font-size: 2em;
+                    color: lightgray;
+                }
+            }
+            .art{
+                font-size: 1.6em;
+                color: #b6b6b6;
+                margin-bottom: 4px;
+            }
+            .name{
+                font-size: 1.8em;
+                color: #313131;
+                margin-bottom: 0.6em;
+            }
+            .price{
+                text-transform: uppercase;
+                span{
+                    color: #a9a9a9;
+                    font-size: 0.9em;
+                    text-decoration: line-through;
+                }
+            }
+            p{
+                text-align: center;
+            }
+            button{
+                display: block;
+                margin: 0 auto;
+                outline: none;
+                background: #9d74a0;
+                border-radius: 3px;
+                border: none;
+                padding: 14px 4.5em;
+                p{
+                    color: #ffffff;
+                    font-size: 1.8em;
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
