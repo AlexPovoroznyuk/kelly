@@ -16,3 +16,5 @@ Main style file
 @import "./components/_general.css";
 @import "./components/font-awesome.css";
 @import "./components/_header.pcss";
+@import "./components/_footer.pcss";
+@import "./components/_main.pcss";

@@ -6,7 +6,7 @@
   "scripts": {
     "run": "gulp build && gulp watch",
     "init": "node init.js",
-    "starter": "gulp build && gulp watch",
+    "start": "gulp build && gulp watch",
     "deploy": "gulp deploy && gulp deploy-scp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
