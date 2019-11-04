@@ -99,16 +99,40 @@ main{
             letter-spacing: 0.5px;
         }
         .product-item{
-            border: 1px solid black;
-            width: 50%;
-            padding: 4.5em 10px 3em;
+            width: 100%;
+            padding: 2em 10px 3em;
+            &:hover{
+                box-shadow: 0 0 17px 1px rgba(0, 0, 0, 0.16);
+                .stars, button{
+                    height: auto;
+                    /* transition: 0.3s; */
+                    
+                }
+                button{
+                    padding: 14px 4.5em;
+                }
+
+            }
             .stars{
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 padding: 0 2em;
+                transition: 0.3s;
+                height: 0;
                 i{
                     font-size: 2em;
-                    color: lightgray;
+                    color: #b6b6b6;
+                }
+                .stars-wrap{
+                    i{
+                        font-size: 1.6em;
+                        color:  #9d74a0;
+                    }
+                    span{
+                        font-size: 2em;
+                        color: #b6b6b6;
+                    }
                 }
             }
             .art{
@@ -139,7 +163,9 @@ main{
                 background: #9d74a0;
                 border-radius: 3px;
                 border: none;
-                padding: 14px 4.5em;
+                padding: 0;
+                transition: 0.3s;
+                height: 0;
                 p{
                     color: #ffffff;
                     font-size: 1.8em;
