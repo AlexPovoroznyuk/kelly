@@ -23,3 +23,5 @@ Main style file
 @import "./components/_main.pcss";
 
 @import "./components/_partners.pcss";
+
+@import "./components/_contacts.pcss";
