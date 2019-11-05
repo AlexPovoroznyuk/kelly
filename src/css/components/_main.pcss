@@ -1,5 +1,8 @@
+
+
 main{
     font-size: calc(0.25vw + 5px);
+    position: relative;
     padding-top: 5em;
     img{
         width: 100%;
@@ -50,8 +53,12 @@ main{
                 font-weight: 400;
             }
             .special{
-                color: purple;
-                font-size: 3em;
+                    font-size: 3em;
+    background-image: linear-gradient(to top, #653360 0%, #8c6090 100%);
+    background-clip: text;
+    color: #2a3137;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
                 font-family: "GoodVibesPro";
                 
             }
@@ -127,14 +134,16 @@ main{
         padding: 2em 10px 3em;
         border: 1px solid #eeeeee;
         transition: 0.3s;
+        height: 41.8em;
         &:hover{
             box-shadow: 0 0 17px 1px rgba(0, 0, 0, 0.16);
+                height: 46.4em;
             .stars, button{
                 opacity: 1;
             }
             button{
-                height: auto;
-                padding: 14px 4.5em;
+                /* height: auto; */
+                /* padding: 14px 4.5em; */
             }
             .item-content{
                 transform: translateY(0);
@@ -207,10 +216,10 @@ main{
             background: #9d74a0;
             border-radius: 3px;
             border: none;
-            padding: 0;
+            padding: 14px 4.5em;
             transition: 0.3s;
             opacity: 0;
-            height: 0;
+                height: auto;
             p{
                 color: #ffffff;
                 font-size: 1.8em;
@@ -225,6 +234,7 @@ main{
         margin-bottom: 9em;
         .col-md-3{
             padding: 0;
+            height: 45.4em;
         }
         .caption{
             margin: 7.6em 0 10em;
