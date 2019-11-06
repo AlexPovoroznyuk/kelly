@@ -22,4 +22,9 @@ Main style file
 @import "./components/_header.pcss";
 @import "./components/_footer.pcss";
 @import "./components/_main.pcss";
+
+@import "./components/_partners.pcss";
+
+@import "./components/_contacts.pcss";
+@import "./components/_about-as.pcss";
 @import "./components/_busket.pcss";

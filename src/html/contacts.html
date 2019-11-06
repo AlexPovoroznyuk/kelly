@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+@@include('./components/_head.html')
+
+<body>
+    @@include('./components/_header.html')
+    @@include('./components/_contacts.html')
+    @@include('./components/_footer.html')
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 49.233437, lng: 28.479090},
+            zoom: 15
+            });
+            var marker = new google.maps.Marker({position: {lat: 49.233437, lng: 28.479090}, map: map});
+        }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLNeG0aT6ss4IGY0nxzdU-N5EyOdSzIRI&callback=initMap"
+        async defer>
+    </script>
+</body>
+
+</html>
