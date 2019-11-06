@@ -10,6 +10,7 @@ display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
+    font-weight: 200;
         }
         img{
 width: 100%;
@@ -20,6 +21,10 @@ width: 100%;
 .left-menu{
     display: flex;
     align-items: center;
+    &>button{
+        background: transparent;
+        border: none;
+    }
     .catalog-trigger{
             margin-right: 20px;
     }
@@ -35,7 +40,7 @@ line-height: 24px;
 span{
 font-family: "FuturaPT";
 font-size: 18px;
-font-weight: 400;
+font-weight: 200;
 line-height: 24px;
 text-transform: uppercase;
 letter-spacing: 0.45px;
@@ -83,6 +88,37 @@ letter-spacing: 0.45px;
 }
 
 .menu{
+
+    .basket-btn{
+        position: relative;
+        .counter{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #cba674;
+            border-radius: 50%;
+
+color: #ffffff;
+font-family: "FuturaPT";
+font-size: 14px;
+line-height: .8;
+font-weight: 400;
+    bottom: -33%;
+    right: -11%;
+        }
+    }
+    .basket, .favorite{
+        margin-right: 15px;
+    }
+    .account, .favorite, .basket, .currency, .search, .lang, .catalog-trigger{
+        &>button{
+            background: transparent;
+            border: none;
+        }
+    }
     .row{
             display: flex;
     align-items: center;
@@ -98,8 +134,5 @@ letter-spacing: 0.45px;
         padding: 17px 0;
         
 
-    button{
-        background: transparent;
-        border: none;
-    }
+    
 }
