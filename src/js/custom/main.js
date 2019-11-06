@@ -6,5 +6,17 @@ $(".basket-btn").click(function(){
 
 $(".busket-container .close-triggrer button").click(function(){
     $(".busket-container").removeClass("active");
-    console.log("sdbdb")
+});
+
+
+$(".search-btn").click(function(){
+    if(!$(".search-container").hasClass("active")){
+        $(".search-container").addClass("active");
+    }
+});
+
+$(".search-close-btn").click(function(){
+    console.log("segweg")
+    $(".search-container").removeClass("active");
+   
 });
