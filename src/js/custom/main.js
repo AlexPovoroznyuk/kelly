@@ -20,3 +20,21 @@ $(".search-close-btn").click(function(){
     $(".search-container").removeClass("active");
    
 });
+
+
+$(".category-item").mouseenter(function(){
+    console.log("segweg")
+    $(".category-item").removeClass("hover");
+    $(this).addClass("hover")
+});
+
+$(".catalog-trigger button").click(function(){
+    if(!$(".menu").hasClass("open-catalog")){
+    $(".menu").addClass("open-catalog");
+    $(".catalog").addClass("active");
+}
+else{
+    $(".menu").removeClass("open-catalog");
+    $(".catalog").removeClass("active");
+}
+})

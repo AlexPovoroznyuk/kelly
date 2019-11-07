@@ -164,8 +164,13 @@
 }
 
 .menu {
-    background-color: #2b122c;
-    background-image: linear-gradient(to top, rgba(83, 91, 94, 0.19) 0%, rgba(254, 254, 254, 0.19) 10%, rgba(78, 82, 84, 0.19) 51%, rgba(253, 253, 253, 0.19) 84%, rgba(83, 91, 94, 0.19) 100%), linear-gradient(to top, rgba(101, 51, 96, 0.68) 0%, rgba(140, 96, 144, 0.68) 100%);
+    background: transparent;
+    transition: .3s;
+    &.open-catalog{
+        background-color: #2b122c;
+        background-image: linear-gradient(to top, rgba(83, 91, 94, 0.19) 0%, rgba(254, 254, 254, 0.19) 10%, rgba(78, 82, 84, 0.19) 51%, rgba(253, 253, 253, 0.19) 84%, rgba(83, 91, 94, 0.19) 100%), linear-gradient(to top, rgba(101, 51, 96, 0.68) 0%, rgba(140, 96, 144, 0.68) 100%);
+    }
+    
 
     .basket-btn {
         position: relative;
@@ -233,7 +238,15 @@
         right: 0;
         background: #fff;
         box-shadow: 0 4px 7px 1px rgba(0, 0, 0, 0.1);
-
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-15px);
+        transition: .3s;
+        &.active{
+            opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+        }
         .row {
             align-items: flex-start;
         }
@@ -248,7 +261,7 @@
                 font-size: 20px;
                 font-weight: 300;
                 line-height: 50px;
-
+                max-width: 271px;
                 font-family: "FuturaPT";
                 font-weight: 400;
                 letter-spacing: 0.5px;
@@ -266,6 +279,13 @@
                     color: #313131;
                     .fa{
                         opacity: 1;
+                    }
+                    &~.sub-category{
+                        
+                        opacity: 1;
+                        pointer-events: auto;
+                        
+                        
                     }
                 }
 
@@ -292,6 +312,14 @@
                 font-weight: 300;
                 line-height: 50px;
                 letter-spacing: 0.4px;
+                transition: .3s;
+                &:hover{
+                    a{
+                       color: #9d74a0; 
+                       text-decoration: none;
+                    }
+                    
+                }
 
             }
         }
@@ -331,20 +359,32 @@
         .sub-category {
             padding: 10px 0 23px;
             box-shadow: 0 4px 7px 1px rgba(0, 0, 0, 0.1);
-            position: relative;
+            position: absolute;
             z-index: 3;
             background: #fff;
-            
+            width: 371px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+                pointer-events: none;
+   
             .sub-category-item-wr {
-                opacity: 0;
+                
             }
 
             .sub-category-item {
                 flex-wrap: wrap;
                 display: flex;
                 align-items: center;
+                &:hover{
+                    &>a{
+                        color: #9d74a0;
+                        text-decoration: none;
+                    }
+                }
 
                 a {
+                    transition: .3s;
                     display: flex;
                     align-items: center;
                     color: #5e5e5e;
@@ -372,5 +412,6 @@
 
     .catalog-container {
         overflow: hidden;
+        min-height: 625px;
     }
 }
