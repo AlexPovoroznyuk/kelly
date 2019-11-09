@@ -56,3 +56,22 @@ $(window).scroll(function(){
         $(".menu").removeClass("scrolled")
     }
 })
+
+$("[data-tab]").click(function(e){
+    e.preventDefault;
+    var activeTab = $(this).attr("data-tab");
+    $(".modal-tab, .modal-auth-form").removeClass("active");
+    $(`.modal-tab[data-tab="${activeTab}"]`).addClass("active");
+    $(`[data-tab-form="${activeTab}"]`).addClass("active");
+})
+
+$(".modal-close").click(function(){
+    $(".modal").removeClass("active")
+})
+
+$("[data-modal]").click(function(e){
+    e.preventDefault;
+    var activeModal = $(this).attr("data-modal");
+    $(".modal").removeClass("active");
+    $(`#${activeModal}`).addClass("active");
+})
