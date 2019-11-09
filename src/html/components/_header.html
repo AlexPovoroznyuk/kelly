@@ -1,145 +1,163 @@
-<header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="container-fluid menu">
-                <div class="row">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3 left-menu">
-                                <div class="catalog-trigger">
-                                    <button>
-                                        <img src="img/pics/catalog-trigger.png" alt="catalog icon">
-                                    </button>
-                                </div>
-                                <div class="lang">
-                                    <button>
-                                        <span>ua</span>
-                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="search">
-                                    <button class="search-btn">
-                                        <img src="img/pics/search.png" alt="search-icon">
-                                    </button>
-                                    <div class="search-container">
-                                        <div class="input-part">
-                                            <input type="text">
-                                            <img class="search-close-btn" src="img/pics/search-block.png"
-                                                alt="search-icon">
-                                        </div>
-                                        <div class="result-part">
-                                            <div class="result-item">
-                                                Золоті сережки
-                                            </div>
-                                            <div class="result-item">
-                                                Золотий перстень
-                                            </div>
-                                            <div class="result-item">
-                                                Золотий браслет
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
+<header class="container-fluid menu">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 left-menu">
+                    <div class="catalog-trigger">
+                        <button>
+                            <img class="no-scroll-content" src="img/pics/catalog-trigger.png" alt="catalog icon">
+                            <img class="scroll-content" src="img/pics/catalog-trigger-dark.png" alt="catalog icon">
+                        </button>
+                    </div>
+                    <div class="lang">
+                        <button>
+                            <span>ua</span>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="search">
+                        <button class="search-btn">
+                            <img class="no-scroll-content" src="img/pics/search.png" alt="search-icon">
+                            <img class="scroll-content" src="img/pics/search-icon-dark.png" alt="search-icon">
+                        </button>
+                        <div class="search-container">
+                            <div class="input-part">
+                                <input type="text">
+                                <img class="search-close-btn" src="img/pics/search-block.png" alt="search-icon">
                             </div>
-                            <div class="col-md-6">
-                                <div class="logo">
-                                    <img src="img/pics/logo.png" alt="logo">
+                            <div class="result-part">
+                                <div class="result-item">
+                                    Золоті сережки
                                 </div>
-                            </div>
-                            <div class="col-md-3 right-menu">
-                                <div class="currency">
-                                    <button>
-                                        <span>usd</span> | <span class="second-currency">Uah</span>
-                                    </button>
+                                <div class="result-item">
+                                    Золотий перстень
                                 </div>
-                                <div class="account-wr">
-                                    <div class="basket">
-                                        <button class="basket-btn">
-                                            <img src="img/pics/shopping-bag.png" alt="shopping bag icon">
-                                            <span class="counter">3</span>
-                                        </button>
-                                        @@include('./_basket.html')
-                                    </div>
-                                    <div class="favorite">
-                                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                                    </div>
-                                    <div class="account">
-                                        <button>
-                                            <img src="img/pics/user.png" alt="">
-                                        </button>
-                                    </div>
+                                <div class="result-item">
+                                    Золотий браслет
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                    <div class="catalog">
-                        <div class="container-fluid catalog-container">
-                            <div class="row">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-7">
-                                            <ul class="category list-unstyled">
-                                                <li>
-                                                    <a href="#" class="category-item hover" data-item="gold">
-                                                        <span>
-                                                            <img src="img/pics/category-label1.png" alt="">
-                                                        </span>
-                                                        Золото
-                                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    </a>
-                                                    @@include('./_subcategory.html')
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="category-item">
-                                                        <span>
-                                                            <img src="img/pics/category-label2.png" alt="">
-                                                        </span>
-                                                        Срібло
-                                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    </a>
-                                                    @@include('./_subcategory.html')
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="category-item">
-                                                        <span>
-                                                            <img src="img/pics/category-label3.png" alt="">
-                                                        </span>
-                                                        Новинки
-                                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    </a>
-                                                    @@include('./_subcategory.html')
-                                                </li>
-                                                <li>
-                                                    <a class="category-item" href="#">
-                                                        <span>
-                                                            <img src="img/pics/category-label4.png" alt="">
-                                                        </span>
-                                                        Акційні пропрозиції
-                                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    </a>
-                                                    @@include('./_subcategory.html')
-                                                </li>
-                                            </ul>
-                                            
-                                        </div>
-                                        <div class="col-md-5">
-                                            <div class="category-img">
-                                                <img src="img/pics/category-img.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="logo">
+                        <a href="#" class="logo-lnk">
+                            <img class="no-scroll-content" src="img/pics/logo.png" alt="logo">
+                            <img class="scroll-content" src="img/pics/logo-dark.png" alt="logo">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-3 right-menu">
+                    <div class="currency">
+                        <button>
+                            <span>usd</span> | <span class="second-currency">Uah</span>
+                        </button>
+                    </div>
+                    <div class="account-wr">
+                        <div class="basket">
+                            <button class="basket-btn" data-open="empty">
+                                <img class="no-scroll-content" src="img/pics/shopping-bag.png" alt="shopping bag icon">
+                                <img class="scroll-content" src="img/pics/shopping-bag-dark.png"
+                                    alt="shopping bag icon">
+                                <span class="counter">3</span>
+                            </button>
+                            <ul class="empty-basket list-unstyled" data-busket="empty">
+                                <li>
+                                    <p>
+                                        <img src="img/pics/shopping-bag-violet.png" alt="shopping bag icon"><span>Ваш
+                                            кошик порожній</span></p>
+                                </li>
+                            </ul>
+                            @@include('./_basket.html')
+                        </div>
+                        <div class="favorite">
+                            <button>
+                                <img  class="no-scroll-content" src="img/pics/heart.png" alt="">
+                                <img class="scroll-content" src="img/pics/heart-dark.png" alt=""></button>
+                        </div>
+                        <div class="account">
+                            <button>
+                                <img class="no-scroll-content" src="img/pics/user.png" alt="">
+                                <img class="scroll-content" src="img/pics/user-dark.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="catalog">
+            <div class="container-fluid catalog-container">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <ul class="category list-unstyled">
+                                    <li>
+                                        <a href="#" class="category-item hover" data-item="gold">
+                                            <span>
+                                                <img src="img/pics/category-label1.png" alt="">
+                                            </span>
+                                            Золото
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                        @@include('./_subcategory.html')
+                                    </li>
+                                    <li>
+                                        <a href="#" class="category-item">
+                                            <span>
+                                                <img src="img/pics/category-label2.png" alt="">
+                                            </span>
+                                            Срібло
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                        @@include('./_subcategory.html')
+                                    </li>
+                                    <li>
+                                        <a href="#" class="category-item">
+                                            <span>
+                                                <img src="img/pics/category-label3.png" alt="">
+                                            </span>
+                                            Новинки
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                        @@include('./_subcategory.html')
+                                    </li>
+                                    <li>
+                                        <a class="category-item" href="#">
+                                            <span>
+                                                <img src="img/pics/category-label4.png" alt="">
+                                            </span>
+                                            Акційні пропрозиції
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                        @@include('./_subcategory.html')
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="col-md-5">
+                                <div class="category-img">
+                                    <img src="img/pics/category-img.png" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="first-screen">
-                <h1>Гарний заголовок</h1>
-                <img src="img/pics/header-img.jpg" alt="">
-            </div>
         </div>
+    </div>
+    <div class="row">
+            <div class="scrolled-line">
+                    <div class="gradient-line">
+        
+                    </div>
+                    <div class="scroll-line">
+                        <span>Ювелірні вироби вищої якості</span>
+                    </div>
+                </div>
     </div>
 </header>
