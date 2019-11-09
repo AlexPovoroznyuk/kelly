@@ -1,0 +1,255 @@
+.modal {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background: rgba(0, 7, 18, .3);
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+
+    &.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .modal-dialog {
+        margin-top: 115px;
+        max-width: 458px;
+        width: 100%;
+        border-radius: 3px;
+        background-color: #f9f9f9;
+        align-self: flex-start;
+    }
+
+    .modal-content {
+        background-color: #f9f9f9;
+    }
+
+    .modal-close {
+        position: absolute;
+        top: -9px;
+        right: -9px;
+        border-radius: 50%;
+        border: none;
+        width: 33px;
+        height: 33px;
+        box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.13);
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            position: relative;
+            width: 10px;
+            height: 10px;
+            display: block;
+
+            &::before,
+            &::after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                background: rgba(126, 126, 126, .6);
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+            }
+
+            &::before {
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .modal-title {
+        color: #2a3137;
+        font-family: "FuturaPT";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 27px;
+    }
+
+    .modal-text {
+        color: #7e7e7e;
+        font-family: "FuturaPT";
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.33;
+        letter-spacing: 0.4px;
+        margin-bottom: 22px;
+    }
+
+    .modal-form {
+        padding: 42px 44px 31px;
+    }
+
+    form {}
+
+    .input-wr {
+        position: relative;
+        margin-bottom: 15px;
+
+        input {
+            width: 100%;
+            display: block;
+            border-radius: 3px;
+            border: 1px solid #dadada;
+            background-color: #ffffff;
+            padding-left: 61px;
+            padding-right: 20px;
+            color: #32302d;
+            font-family: "FuturaPT";
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 2.1;
+            letter-spacing: 0.45px;
+
+            &::placeholder {
+                opacity: 0.45;
+                color: #32302d;
+                font-family: "FuturaPT";
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 2.1;
+                letter-spacing: 0.45px;
+            }
+        }
+
+        label {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            padding: 0 11px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid #dadada;
+            margin-bottom: 0;
+
+            img {}
+        }
+    }
+
+    .checbox-wr {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 21px;
+    }
+
+    .checbox {
+        display: flex;
+
+        .hidden-content {
+            display: none;
+        }
+
+        .checkbox-style {
+            width: 18px;
+            height: 18px;
+            border-radius: 3px;
+            border: 1px solid #dadada;
+            background-color: #ffffff;
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
+
+        .label-txt {
+            color: #2a3137;
+            font-family: "FuturaPT";
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.27;
+            letter-spacing: 0.4px;
+            margin-bottom: 0;
+        }
+    }
+
+    .submit-btn {
+        margin-bottom: 21px;
+
+        span {}
+    }
+
+    .auth-block {
+        display: flex;
+        justify-content: space-between;
+&.txt-center{
+    justify-content: center;      
+            }
+        .auth {}
+
+        .register {
+            
+            span {
+                color: #7e7e7e;
+                font-family: "FuturaPT";
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 20px;
+            }
+        }
+
+
+    }
+
+    .modal-trigger {
+        color: #2f69c0;
+        font-family: "FuturaPT";
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.27;
+        letter-spacing: 0.4px;
+    }
+
+    .modal-tabs {
+        display: flex;
+
+        .modal-tab {
+            width: 50%;
+            background-color: #e8e8e8;
+
+            border: none;
+            &.active{
+                background-color: #f9f9f9;
+                span{
+                    opacity: 1;
+                }
+            }
+            &:first-child {
+                border-radius: 3px 0 0;
+            }
+
+            span {
+                opacity: 0.8;
+                color: #5a5a59;
+                font-family: "FuturaPT";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 3.33;
+                text-transform: uppercase;
+                letter-spacing: 0.45px;
+            }
+        }
+    }
+    .modal-auth-form{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+
+}

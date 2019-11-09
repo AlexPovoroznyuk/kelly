@@ -1,0 +1,148 @@
+<div class="modal" id="remember-password">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button class="modal-close"><span></span></button>
+            <div class="modal-form">
+                <div class="modal-title">
+                    Менеджер паролів
+                </div>
+                <div class="modal-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <form action="#">
+                    <div class="input-wr">
+                        <input id="email" type="text" placeholder="Введіть Email">
+                        <label for="email">
+                            <img src="img/pics/mail.png" alt="">
+                        </label>
+                    </div>
+                    <div class="checbox-wr">
+                        <div class="checbox">
+                            <input id="remember-me" name="remember-me" class="hidden-content" type="checkbox">
+                            <label class="checkbox-style" for="remember-me"></label>
+                            <label class="label-txt" for="remember-me">Запам’ятати мене</label>
+                        </div>
+                    </div>
+                    <button class="submit-btn standart-btn" type="submit">
+                        <span>Відправити</span>
+                    </button>
+                </form>
+
+                <div class="auth-block">
+                    <div class="auth">
+                        <a href="#" class="modal-trigger" data-modal="auth" data-tab="login">Увійти</a>
+                    </div>
+                    <div class="register">
+                        <span>Не зареєстровані? </span><a href="#" class="modal-trigger"
+                            data-modal="auth" data-tab="register">Реєстрація</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="auth">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-tabs">
+                <button class="modal-tab active" data-tab="register"><span>Реєстрація</span></button>
+                <button class="modal-tab" data-tab="login"><span>Вхід</span></button>
+            </div>
+            <button class="modal-close"><span></span></button>
+            <div class="modal-auth-form modal-form" data-tab-form="login">
+                <form action="#">
+                    <div class="input-wr">
+                        <input id="auth-email" name="auth-email" type="text" placeholder="Email">
+                        <label for="auth-email">
+                            <img src="img/pics/mail.png" alt="">
+                        </label>
+                    </div>
+                    <div class="input-wr">
+                        <input id="auth-pass" name="auth-pass" type="text" placeholder="Пароль">
+                        <label for="auth-pass">
+                            <img src="img/pics/repeat-pass-icon.png" alt="">
+                        </label>
+                    </div>
+                    <div class="checbox-wr">
+                        <div class="checbox">
+                            <input id="remember-me2" name="remember-me" class="hidden-content" type="checkbox">
+                            <label class="checkbox-style" for="remember-me2"></label>
+                            <label class="label-txt" for="remember-me2">Запам’ятати мене</label>
+                        </div>
+                        <div class="remember-lnk">
+                            <a href="#" class="modal-trigger" data-modal="remember-password">Забули пароль?</a>
+                        </div>
+                    </div>
+
+                    <button class="submit-btn standart-btn" type="submit">
+                        <span>Відправити</span>
+                    </button>
+                </form>
+
+                <div class="auth-block txt-center">
+                    <div class="register">
+                        <span>Не зареєстровані? </span><a href="#" class="modal-trigger"
+                            data-modal="auth" data-tab="register">Реєстрація</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-auth-form modal-form active" data-tab-form="register">
+                    <form action="#">
+                            <div class="input-wr">
+                                    <input id="name" name="name" type="text" placeholder="Ім’я, Прізвище">
+                                    <label for="name">
+                                        <img src="img/pics/name-icon.png" alt="">
+                                    </label>
+                                </div>
+                                <div class="input-wr">
+                                        <input id="phone" name="phone" type="text" placeholder="Номер телефону">
+                                        <label for="phone">
+                                            <img src="img/pics/phone-icon.png" alt="">
+                                        </label>
+                                    </div>
+                        <div class="input-wr">
+                            <input id="auth-email" name="auth-email" type="text" placeholder="Email">
+                            <label for="auth-email">
+                                <img src="img/pics/mail.png" alt="">
+                            </label>
+                        </div>
+                        <div class="input-wr">
+                            <input id="auth-pass" name="auth-pass" type="text" placeholder="Пароль">
+                            <label for="auth-pass">
+                                <img src="img/pics/pass-icon.png" alt="">
+                            </label>
+                        </div>
+                        <div class="input-wr">
+                                <input id="repeat-pass" name="repeat-pass" type="text" placeholder="Підтвердити пароль">
+                                <label for="repeat-pass">
+                                    <img src="img/pics/repeat-pass-icon.png" alt="">
+                                </label>
+                            </div>
+                        <div class="checbox-wr">
+                            <div class="checbox">
+                                <input id="subscribe" name="subscribe" class="hidden-content" type="checkbox">
+                                <label class="checkbox-style" for="subscribe"></label>
+                                <label class="label-txt" for="subscribe">Я хочу підписатися на розсилку новин</label>
+                            </div>
+                        </div>
+    
+                        <button class="submit-btn standart-btn" type="submit">
+                            <span>Відправити</span>
+                        </button>
+                    </form>
+    
+                    <div class="auth-block txt-center">
+                        <div class="register"> 
+                            <span>Вже зареєстровані? </span><a href="#" class="modal-trigger"
+                                data-modal="auth" data-tab="login">Увійти</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+        </div>
+    </div>
+</div>

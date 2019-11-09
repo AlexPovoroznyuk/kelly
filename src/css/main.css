@@ -22,6 +22,7 @@ Main style file
 @import "./components/_header.pcss";
 @import "./components/_footer.pcss";
 @import "./components/_main.pcss";
+@import "./components/_modal.pcss";
 
 @import "./components/_partners.pcss";
 @import "./components/_comment.pcss";
