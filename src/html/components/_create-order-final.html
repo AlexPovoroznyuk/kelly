@@ -1,0 +1,144 @@
+<div class="container create-order">
+    <div class="caption">
+        <p>Оформлення замовлення</p>
+    </div>
+    <div class="row ">
+        <div class="col-md-6 registration">
+            <form>
+                <div class="form-part active">
+                    <fieldset>
+                        <legend>Дані отримувача</legend>
+                        <label>
+                            <p>Ім’я
+                                <span>*</span>
+                            </p>
+                            <input type="text" name="name"/>
+                        </label>
+                        <label>
+                            <p>Прізвище
+                                <span>*</span>
+                            </p>
+                            <input type="text" name="surname"/>
+                        </label>
+                        <label>
+                            <p>Телефон
+                                <span>*</span>
+                            </p>
+                            <input type="tel" name="phone"/>
+                        </label>
+                        <label>
+                            <p>Email
+                                <span>*</span>
+                            </p>
+                            <input type="email" name="email"/>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Адреса доставки</legend>
+                        <label>
+                            <p>Індекс
+                                <span>*</span>
+                            </p>
+                            <input type="text" name="index"/>
+                        </label>
+                        <label>
+                            <p>Населений пункт
+                                <span>*</span>
+                            </p>
+                            <input type="text" name="town"/>
+                        </label>
+                        <label>
+                            <p>Адреса
+                                <span>*</span>
+                            </p>
+                            <input type="text" name="address"/>
+                        </label>
+                    </fieldset>
+                    <fieldset >
+                        <legend>Спосіб оплати</legend>
+                        <div class="payment-wrap">
+                        <input class="radio-input" type="radio" name="payment" value="online" id="payment-online" checked />
+                        <label class="radio-button" for="payment-online">
+                            <div>
+                                <img src="../../img/pics/online.png" />
+                            </div>
+                            <div>
+                                <p>Оплата онлайн</p>
+                                <p>Visa, MasterCard</p>
+                            </div>
+                        </label>
+                        <input class="radio-input" type="radio" name="payment" value="cash" id="payment-cash"/>
+                        <label class="radio-button" for="payment-cash">
+                            <div>
+                                <img src="../../img/pics/cash.png" />
+                            </div>
+                            <div>
+                                <p>Готівкою</p>
+                                <p>При отриманні</p>
+                            </div>
+                        </label>
+                    </div>
+                    </fieldset>
+                </div>
+                <div class="form-part ">
+                    <label>
+                        <p>Email
+                            <span>*</span>
+                        </p>
+                        <input type="email" name="email"/>
+                    </label>
+                    <label>
+                        <p>Пароль
+                            <span>*</span>
+                        </p>
+                        <input type="password" name="pass"/>
+                    </label>
+                    <div class="new-pass"><a href="#">Забули пароль?</a></div>
+                    <button type="submit"><span>Увійти</span></button>
+                </div>
+                
+            </form>
+        </div>
+        <div class="col-md-6 basket">
+            <div class="basket-wrap">
+                <div class="basket-caption">
+                    <p>Товари у кошику</p>
+                </div>
+                <div class="basket-content">
+                    <div class="basket-list">
+                        @@include('./_backed-item.html', {
+                            "name": "Перстень Назва",
+                            "icon": "../../img/pics/order-ring.png",
+                            "quantity": "1",
+                            "price": "3500"
+                        })
+                        @@include('./_backed-item.html', {
+                            "name": "Перстень",
+                            "icon": "../../img/pics/order-ring.png",
+                            "quantity": "2",
+                            "price": "3000"
+                        })
+                        @@include('./_backed-item.html', {
+                            "name": "Перстень 2",
+                            "icon": "../../img/pics/order-ring.png",
+                            "quantity": "1",
+                            "price": "3500"
+                        })
+                        
+                    </div>
+                    <div class="basket-result">
+                        <p>Доставка Нова Пошта
+                            <span>Бескоштовно</span>
+                        </p>
+                        <p class="payment">Бескоштовно
+                            <span>10500 uah</span>
+                        </p>
+                    </div>
+                </div>
+                <button type="button" class="order">
+                    <span>Оформити замовлення</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
