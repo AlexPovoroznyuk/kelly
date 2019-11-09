@@ -1,0 +1,311 @@
+.create-order{
+    font-size: calc(0.25vw + 5px);
+    padding-top: 7em;
+    P{
+        margin: 0;
+    }
+    img{
+        width: 100%;
+    }
+    .caption{
+        margin-bottom: 5em;
+        p{
+            color: #313131;
+            font-family: "PoiretOne";
+            font-size: 3em;
+            font-weight: 400;
+            text-align: left;
+        }
+    }
+    .registration{
+        border-radius: 3px;
+        border: 1px solid #e6e6e6;
+        margin-bottom: 13em;
+        .client{
+            padding: 2.3em;
+            text-align: center;
+            background-color: #e8e8e8;
+            span{
+                color: #5a5a59;
+                font-family: "FuturaPT";
+                font-size: 1.8em;
+                font-weight: 500;
+                letter-spacing: 0.45px;
+                opacity: 0.8;
+            }
+            &.active{
+                background-color: #ffffff;
+                span{
+                    opacity: 1;
+                    color: #2a3137;
+                }
+            }
+        }
+        form{
+            padding: 4em 6.5em 5em;
+            legend{
+                color: #2a3137;
+                font-family: "FuturaPT";
+                font-size: 2.4em;
+                font-weight: 400;
+                letter-spacing: 0.6px;
+                margin: 1em 0;
+                border: none;
+            }
+            fieldset{
+                border-bottom: 1px solid #e6e6e6;
+                padding-bottom: 2.5em;
+                margin-bottom: 2.5em;
+                &:last-of-type{
+                    border-bottom: none; 
+                }
+            }
+            .payment-wrap{
+                display: flex;
+            }
+            .radio-input{
+                display: none;
+            }
+            .radio-input:checked + .radio-button{
+                border: 1px solid #865b87;
+            }
+            .radio-button{
+                margin: 0;
+                width: 180px;
+                border-radius: 5px;
+                border: 1px solid #e6e6e6;
+                padding: 10px 20px;
+                flex-wrap: wrap;
+                margin-right: 2em;
+                justify-content: flex-start;
+                cursor: pointer;
+                &[for="payment-cash"]{
+                    img{
+                        width: 24px;
+                    }
+                }
+                img{
+                    width: 30px;
+                }
+                p{
+                    color: #5b5b61;
+                    font-family: "FuturaPT";
+                    font-size: 1.6em;
+                    font-weight: 300;
+                    margin-left: 13px;
+                    &:last-of-type{
+                        color: #8d8d8f;
+                        font-size: 12px;
+                        letter-spacing: 0.3px;
+                    }
+                }
+            }
+
+            label{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 2em;
+                p,input{
+                    color: #5b5b61;
+                    font-family: "FuturaPT";
+                    font-size: 1.8em;
+                    font-weight: 300;
+                    span{
+                        color: #f16e7d;
+                    }
+                }
+                input{
+                    width: 66%;
+                    padding: 10px 1em;
+                    border-radius: 3px;
+                    border: 1px solid #e6e6e6;
+                    outline: none;
+                    &:focus{
+                        border: 1px solid #865b87;
+                    }
+                }
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+                
+            }
+            button{
+                margin-left: auto;
+                margin-top: 2.5em;
+                display: block;
+                border-radius: 3px;
+                padding: 1.5em 4em;
+                background-color: #9d74a0;
+                border: none;
+                outline: none;
+                background-image: linear-gradient(to top, rgba(83, 91, 94, 0.09) 0%, rgba(254, 254, 254, 0.09) 10%, rgba(78, 82, 84, 0.09) 51%, rgba(253, 253, 253, 0.09) 84%, rgba(83, 91, 94, 0.09) 100%), linear-gradient(to top, rgba(101, 51, 96, 0.53) 0%, rgba(140, 96, 144, 0.53) 100%);
+                span{
+                    color: #ffffff;
+                    font-family: "FuturaPT";
+                    font-size: 1.6em;
+                    font-weight: 400;
+                }
+            }
+            .form-separator{
+                width: 100%;
+                border-bottom: 1px solid #e6e6e6;
+                margin: 2.5em 0;
+            }
+            .form-part{
+                display: none;
+                &.active{
+                    display: block;
+                }
+            }
+            .new-pass{
+                margin-top: 1em;
+                margin-left: auto;
+                width: fit-content;
+                a{
+                    color: #2f69c0;
+                    font-family: "FuturaPT";
+                    font-size: 1.6em;
+                    font-weight: 300;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .basket-wrap{
+        width: 80%;
+        margin-left: auto;
+        margin-bottom: 13em;
+        .basket-caption{
+            padding: 2em 0;
+            p{
+                color: #313131;
+                font-family: "FuturaPT";
+                font-size: 2.4em;
+                font-weight: 400;
+            }
+        }
+        .basket-content{
+            border-radius: 3px;
+            border: 1px solid #e6e6e6;
+            padding: 2.5em 2em 4.5em;
+            .basked-item{
+                padding: 2em 0;
+                width: calc(100% - 6em);
+                margin: 0 auto;
+                display: flex;
+                border-bottom: 1px solid #e6e6e6;
+                &:last-of-type{
+                    border-bottom: none;
+                }
+                img{
+                    max-width: 70px;
+                }
+                .item-name{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    margin-left: 3em;
+                    p{
+                        color: #7e7e7e;
+                        font-family: "PoiretOne";
+                        font-size: 1.6em;
+                        font-weight: 400;
+                        letter-spacing: 0.4px;
+                        
+                    }
+                    .counter{
+                        display: flex;
+                        p{
+                            color: #6f7680;
+                            font-family: "FuturaPT";
+                            font-size: 13px;
+                            font-weight: 300;
+                            line-height: 20px;
+                            margin: 0 5px;
+                        }
+                        button{
+                            width: 20px;
+                            height: 20px;
+                            font-size: 13px;
+                            text-align: center;
+                            vertical-align: middle;
+                            color: #bbbbbb;
+                            border-radius: 50%;
+                            border: 1px solid #bababa;
+                            background: transparent;
+                            
+                        }
+                    }
+                }
+                .price{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    margin-left: auto;
+                    p{
+                        color: #7e7e7e;
+                        font-family: "FuturaPT";
+                        font-size: 1.6em;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+        }
+        .basket-result{
+            padding: 2.5em 3em 0;
+            border-top: 1px solid  #e6e6e6;
+            p{
+                color: #313131;
+                font-family: "FuturaPT";
+                font-size: 1.6em;
+                font-weight: 300;
+                letter-spacing: 0.4px;
+                margin-bottom: 2.1em;
+                span{
+                    color: #7e7e7e;
+                    font-family: "FuturaPT";
+                    font-size: 1em;
+                    font-weight: 400;
+                    float: right;
+                }
+                &.payment{
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                    span{
+                        color: #9d74a0;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+        button.order{
+            margin-top: 2.5em;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            padding: 10px 2em;
+            display: block;
+            margin-left: auto;
+            background-color: #9d74a0;
+            background-image: linear-gradient(to top, rgba(83, 91, 94, 0.09) 0%, rgba(254, 254, 254, 0.09) 10%, rgba(78, 82, 84, 0.09) 51%, rgba(253, 253, 253, 0.09) 84%, rgba(83, 91, 94, 0.09) 100%), linear-gradient(to top, rgba(101, 51, 96, 0.53) 0%, rgba(140, 96, 144, 0.53) 100%);
+            
+            
+            &.disabled{
+                background-color: #b4b4b4;
+                background-image: linear-gradient(to top, rgba(83, 91, 94, 0.09) 0%, rgba(254, 254, 254, 0.09) 10%, rgba(78, 82, 84, 0.09) 51%, rgba(253, 253, 253, 0.09) 84%, rgba(83, 91, 94, 0.09) 100%);
+            }   
+            span{
+                color: #ffffff;
+                font-family: "FuturaPT";
+                font-size: 1.6em;
+                font-weight: 400;
+                letter-spacing: 0.4px;
+            }
+        }
+    }
+ }
