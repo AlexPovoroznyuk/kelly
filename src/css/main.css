@@ -24,7 +24,9 @@ Main style file
 @import "./components/_main.pcss";
 
 @import "./components/_partners.pcss";
+@import "./components/_comment.pcss";
 
 @import "./components/_contacts.pcss";
 @import "./components/_about-as.pcss";
 @import "./components/_busket.pcss";
+@import "./components/_article-page.pcss";

@@ -1,0 +1,168 @@
+.article-page{
+    font-size: calc(0.25vw + 5px);
+    padding-top: 3.6em;
+    margin-bottom: 12em;
+    img{
+        width: 100%;
+    }
+    .link{
+        p{
+            font-family: "FuturaPT";
+            font-weight: 300;
+            font-size: 1.6em;
+        }
+        a{
+            text-decoration: none;
+            color: #9d74a0; 
+        }
+        span{
+            color: #7e7e7e;
+        }
+    }
+    .caption{
+        margin-bottom: 2.5em;
+        p{
+            color: #2a3137;
+            font-weight: 300;
+            text-align: left;
+            font-family: "PoiretOne";
+            font-size: 4.2em;
+            font-weight: 400;
+        }
+    }
+    .article-date{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.8em;
+        span{
+            color: #cba674;
+            font-family: "FuturaPT";
+            font-size: 1.4em;
+            font-weight: 300;
+          }  
+        i{
+            color: #cba674; 
+            font-size: 1.4em;
+        }
+    }
+    .article-wrap{
+        max-width: 970px;
+        margin: 0 auto;
+        padding-bottom: 4.5em;
+        border-bottom:  1px solid #e6e6e6;
+        .list{
+            margin: 4em -15px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .article-head{
+        margin-bottom: 4em;
+    }
+    p{
+        color: #7e7e7e;
+        font-family: "FuturaPT";
+        font-size: 1.6em;
+        font-weight: 300;
+        letter-spacing: 0.16px;
+    }
+    .list-caption{
+        p{
+            color: #2a3137;
+            letter-spacing: 0.75px;
+            font-size: 3em;
+            
+        }
+    }
+    .article-list{
+        p{
+            padding-left: 20px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 0;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: #865b87;
+            }
+        }
+    }
+    .article-comment{
+        max-width: 970px;
+        margin: 0 auto;
+        padding-top: 3em;
+        form{
+            margin-bottom: 7em;
+            p{
+                color: #7e7e7e;
+                font-family: "FuturaPT";
+                font-size: 1.6em;
+                font-weight: 300;
+                letter-spacing: 0.4px;
+                span{
+                    color: #f16e7d;
+                }
+            }
+            label{
+                width: 50%;
+                max-width: 270px;
+                margin-bottom: 2em;
+                &:first-child{
+                    margin-right: 2em;
+                }
+            }
+            input, textarea{
+                width: 100%;
+                outline: none;
+                border-radius: 3px;
+                border: 1px solid #e6e6e6;
+                padding: 10px 20px;
+                font-family: "FuturaPT";
+                font-size: 1.6em;
+                font-weight: 300;
+                letter-spacing: 0.4px;
+            }
+            textarea{
+                min-height: 12em;
+                resize: none;
+                margin-bottom: 3em;
+                &::placeholder{
+                    color: #7e7e7e;
+                    font-size: 1.1em;
+                    opacity: 0.6;
+                }
+            }
+            button{
+                border: none;
+                outline: none;
+                border-radius: 3px;
+                padding: 1.2em 2em;
+                color: #ffffff;
+                font-family: "FuturaPT";
+                font-weight: 300;
+                background-color: #9d74a0;
+                background-image: linear-gradient(to top, rgba(83, 91, 94, 0.09) 0%, rgba(254, 254, 254, 0.09) 10%, rgba(78, 82, 84, 0.09) 51%, rgba(253, 253, 253, 0.09) 84%, rgba(83, 91, 94, 0.09) 100%), linear-gradient(to top, rgba(101, 51, 96, 0.53) 0%, rgba(140, 96, 144, 0.53) 100%);
+                span,i{
+                    margin-right: 5px;
+                    font-size: 1.8em;
+                }
+            }
+        }
+        .comments{
+            .caption{
+                p{
+                    color: #313131;
+                    font-family: "FuturaPT";
+                    font-size: 2.4em;
+                    font-weight: 300;
+                    
+                }
+            }
+        }
+    }
+    
+}
