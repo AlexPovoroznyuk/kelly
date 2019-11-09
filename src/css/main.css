@@ -31,3 +31,4 @@ Main style file
 @import "./components/_busket.pcss";
 @import "./components/_article-page.pcss";
 @import "./components/_create-order.pcss";
+@import "./components/_payment-info.pcss";
