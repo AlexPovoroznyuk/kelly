@@ -1,0 +1,129 @@
+<div class="container create-order">
+    <div class="caption">
+        <p>Оформлення замовлення</p>
+    </div>
+    <div class="row ">
+        <div class="col-md-6 registration">
+            <div class="row">
+                <div class="col-md-6 client active">
+                    <span>Я новий клієнт</span>
+                </div>
+                <div class="col-md-6 client">
+                    <span>Я постійний клієнт</span>
+                </div>
+            </div>
+            <form>
+                <div class="form-part active">
+                    <label>
+                        <p>Ім’я
+                            <span>*</span>
+                        </p>
+                        <input type="text" name="name"/>
+                    </label>
+                    <label>
+                        <p>Прізвище
+                            <span>*</span>
+                        </p>
+                        <input type="text" name="surname"/>
+                    </label>
+                    <label>
+                        <p>Телефон
+                            <span>*</span>
+                        </p>
+                        <input type="tel" name="phone"/>
+                    </label>
+                    <label>
+                        <p>Email
+                            <span>*</span>
+                        </p>
+                        <input type="email" name="email"/>
+                    </label>
+                    <label>
+                        <p>Пароль
+                            <span>*</span>
+                        </p>
+                        <input type="password" name="pass"/>
+                    </label>
+                    <label>
+                        <p>Повторити пароль
+                            <span>*</span>
+                        </p>
+                        <input type="password" name="pass-2"/>
+                    </label>
+                    <div class="form-separator"></div>
+                    <label>
+                        <p>Індекс
+                            <span>*</span>
+                        </p>
+                        <input type="text" name="index"/>
+                    </label>
+                    <label>
+                        <p>Населений пункт*
+                            <span>*</span>
+                        </p>
+                        <input type="text" name="town"/>
+                    </label>
+                    <label>
+                        <p>Адреса
+                            <span>*</span>
+                        </p>
+                        <input type="text" name="address"/>
+                    </label>
+                    <button type="submit"><span>Зареєструватися</span></button>
+                </div>
+                <div class="form-part ">
+                    <label>
+                        <p>Email
+                            <span>*</span>
+                        </p>
+                        <input type="email" name="email"/>
+                    </label>
+                    <label>
+                        <p>Пароль
+                            <span>*</span>
+                        </p>
+                        <input type="password" name="pass"/>
+                    </label>
+                    <div class="new-pass"><a href="#">Забули пароль?</a></div>
+                    <button type="submit"><span>Увійти</span></button>
+                </div>
+                
+            </form>
+        </div>
+        <div class="col-md-6 basket">
+            <div class="basket-wrap">
+                <div class="basket-caption">
+                    <p>Товари у кошику</p>
+                </div>
+                <div class="basket-content">
+                    <div class="basket-list">
+                        @@include('./_backed-item.html', {
+                            "name": "Перстень Назва",
+                            "icon": "../../img/pics/order-ring.png",
+                            "quantity": "1",
+                            "price": "3500"
+                        })
+                        @@include('./_backed-item.html', {
+                            "name": "Перстень",
+                            "icon": "../../img/pics/order-ring.png",
+                            "quantity": "2",
+                            "price": "3000"
+                        })
+                        
+                    </div>
+                    <div class="basket-result">
+                        <p>Доставка Нова Пошта
+                            <span>Бескоштовно</span>
+                        </p>
+                        <p class="payment">Бескоштовно
+                            <span>10500 uah</span>
+                        </p>
+                    </div>
+                </div>
+                <button type="button" class="order disabled">
+                    <span>Оформити замовлення</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
