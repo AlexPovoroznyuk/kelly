@@ -12,6 +12,9 @@
         justify-content: center;
         color: #fff;
         font-weight: 200;
+
+font-family: "PoiretOne";
+font-size: 60px;
     }
 
     img {
@@ -26,8 +29,9 @@ header {
         background: #fff;
         padding-top: 0;
         padding-bottom: 0;
-        &.open-catalog{
+        &.open-catalog,&.dark-header{
             background: #fff;
+            
         }
         
          .catalog{
@@ -37,6 +41,7 @@ header {
         .scrolled-line {
             opacity: 1;
             pointer-events: auto;
+            height: auto;
         }
         
 
@@ -55,6 +60,17 @@ header {
                 font-weight: 400;
             }
         }
+        .lang{
+button{
+            color: #2a3137;
+            font-weight: 400;
+            span{
+                color: #2a3137;
+                font-weight: 400;
+            }
+        }
+        }
+        
     }
 
     .scroll-content {
@@ -232,7 +248,7 @@ header {
 
 .menu {
     background: transparent;
-    transition: .3s;
+    /* transition: .3s; */
     position: fixed;
     top: 0;
     left: 0;
@@ -242,7 +258,7 @@ header {
 
     padding-bottom: 17px;
 
-    &.open-catalog {
+    &.open-catalog,&.dark-header {
         background-color: #2b122c;
         background-image: linear-gradient(to top, rgba(83, 91, 94, 0.19) 0%, rgba(254, 254, 254, 0.19) 10%, rgba(78, 82, 84, 0.19) 51%, rgba(253, 253, 253, 0.19) 84%, rgba(83, 91, 94, 0.19) 100%), linear-gradient(to top, rgba(101, 51, 96, 0.68) 0%, rgba(140, 96, 144, 0.68) 100%);
     }
@@ -552,6 +568,7 @@ header {
     opacity: 0;
     pointer-events: none;
     width: 100%;
+    height: 0;
     .gradient-line {
 width: 100%;
 height: 6px;

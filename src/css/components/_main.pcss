@@ -26,10 +26,15 @@ main{
             padding-left: 15px;
             p{
                 font-size: 6em;
-                letter-spacing: 0.3em;
-                color: #800080;
-                font-family: "FuturaPT";
-                font-weight: 300;
+                letter-spacing: 0.05em;
+background-image: linear-gradient(to top, #653360 0%, #8c6090 100%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: "FuturaPT";
+font-size: 60px;
+font-weight: 200;
+line-height: 1;
             }
         }
         .descript{
@@ -81,7 +86,7 @@ main{
             text-align: justify;
             color: #7e7e7e;
             font-family: "FuturaPT";
-            font-weight: 300;
+            font-weight: 200;
         }
         .caption{
             p{
@@ -115,7 +120,7 @@ main{
             font-size: 5em;
             color: #38404a;
             font-family: "PoiretOne";
-            font-weight: 400;
+            font-weight: 200;
         }
         .back-img{
             img{
@@ -135,18 +140,67 @@ main{
         border: 1px solid #eeeeee;
         transition: 0.3s;
         height: 41.8em;
+        .favorite, .look{
+            border: none;
+            background: transparent;
+            padding: 0;
+        }
+        .stars-inner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+        .stars-wrap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            label{
+                margin-bottom: 0;
+                margin-right: 5px;
+                display: flex;
+            }
+                .stars-item{
+                    display: flex;
+                    &:hover,&.active{
+                        .fa-star-o{
+                            display: none;
+                        }
+                        .fa-star{
+                            display: block;
+                        }
+                        &~.stars-item{
+                            .fa-star-o{
+                                display: none;
+                            }
+                            .fa-star{
+                                display: block;
+                            }
+                        }
+                    }
+                    
+                }
+            
+            .fa-star{
+                display: none;
+            }
+        }
         &:hover{
             box-shadow: 0 0 17px 1px rgba(0, 0, 0, 0.16);
                 height: 46.4em;
-            .stars, button{
-                opacity: 1;
-            }
+                .stars{
+                    opacity: 1;
+                }
             button{
                 /* height: auto; */
                 /* padding: 14px 4.5em; */
             }
             .item-content{
                 transform: translateY(0);
+                .stars, .item-button{
+                    opacity: 1;
+                }
             }
             
         }
@@ -207,28 +261,32 @@ main{
         .item-content{
             transition: 0.3s;
             transform: translateY(-13px);
-        }
         
-        button{
-            display: block;
+        
+        .item-button{
+            display: flex;
             margin: 0 auto;
             outline: none;
             background: #9d74a0;
             border-radius: 3px;
             border: none;
-            padding: 14px 4.5em;
+            padding: 8px 5.2em;
             transition: 0.3s;
             opacity: 0;
                 height: auto;
-            p{
+            span{
                 color: #ffffff;
                 font-size: 1.8em;
                 text-align: center;
                 margin: 0;
-                font-weight: 400;
-                font-family: "FuturaPT"
+                font-weight: 200;
+                font-family: "FuturaPT";
+                .fa{
+                    margin-left: 8px;
+                }
             }
         }
+    }
     }
     .novelty{
         margin-bottom: 9em;
@@ -243,7 +301,7 @@ main{
             p{
                 font-size: 5em;
                 font-family: "FuturaPT";
-                font-weight: 300;
+                font-weight: 200;
             }
         }
     }
