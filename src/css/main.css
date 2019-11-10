@@ -34,3 +34,4 @@ Main style file
 @import "./components/_create-order.pcss";
 @import "./components/_payment-info.pcss";
 @import "./components/_faq.pcss";
+@import "./components/_catalog.pcss";

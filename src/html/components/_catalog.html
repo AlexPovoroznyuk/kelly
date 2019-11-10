@@ -1,0 +1,113 @@
+<div class=" container catalog-page">
+    <div class="link">
+        <p>
+            <a href="../index.html">Головна  ></a><span> Золото</span>
+        </p>
+    </div>
+    
+    <div class="col-md-3 catalog-menu">
+        <!-- <div class="catalog"> -->
+            <ul class="category list-unstyled">
+                <div class="catalog-head">
+                    <img src="img/pics/catalog-trigger.png" alt="catalog icon">
+                    <span>Каталог виробів</span>
+                </div>
+                <li>
+                    <a href="#" class="category-item hover" data-item="gold">
+                        <span>
+                            <img src="img/pics/category-label1.png" alt="">
+                        </span>
+                        Золото
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                    @@include('./_subcategory.html')
+                </li>
+                <li>
+                    <a href="#" class="category-item">
+                        <span>
+                            <img src="img/pics/category-label2.png" alt="">
+                        </span>
+                        Срібло
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                    @@include('./_subcategory.html')
+                </li>
+                <li>
+                    <a href="#" class="category-item">
+                        <span>
+                            <img src="img/pics/category-label3.png" alt="">
+                        </span>
+                        Новинки
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                    @@include('./_subcategory.html')
+                </li>
+                <li>
+                    <a class="category-item" href="#">
+                        <span>
+                            <img src="img/pics/category-label4.png" alt="">
+                        </span>
+                        Акційні пропрозиції
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                    @@include('./_subcategory.html')
+                </li>
+            </ul>
+        <!-- </div> -->
+    </div>
+    <div class="col-md-9 catalog-list">
+        <div class="caption">
+            <p>Прикраси із золота</p>
+        </div>
+        <div class="row item-list">
+            @@include('./_category-item.html', {
+                "name": "Золоті перстні",
+                "icon": "../../img/pics/item-9.png"
+            })
+            @@include('./_category-item.html', {
+                "name": "Золоті сережки",
+                "icon": "../../img/pics/item-7.png"
+            })
+            @@include('./_category-item.html', {
+                "name": "Золоті ланцюжки",
+                "icon": "../../img/pics/item-6.png"
+            })
+
+
+            @@include('./_category-item.html', {
+                "name": "Золоті кулони",
+                "icon": "../../img/pics/item-1.png"
+            })
+            @@include('./_category-item.html', {
+                "name": "Золоті кольє",
+                "icon": "../../img/pics/item-2.png"
+            })
+            @@include('./_category-item.html', {
+                "name": "Золоті браслети",
+                "icon": "../../img/pics/item-3.png"
+            })
+
+
+            @@include('./_category-item.html', {
+                "name": "Пірcінг (золото)",
+                "icon": "../../img/pics/item-4.png"
+            })
+            @@include('./_category-item.html', {
+                "name": "Золоті аксесуари",
+                "icon": "../../img/pics/item-5.png"
+            }) 
+            @@include('./_category-item.html', {
+                "name": "Золоті гарнітури",
+                "icon": "../../img/pics/item-8.png"
+            })
+            
+        </div>
+        <div class="ceo-block">
+            <div class="ceo-caption">
+                <p>СЕО-блок</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem </p>
+        </div>
+    </div>
+</div>
