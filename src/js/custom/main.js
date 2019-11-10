@@ -22,14 +22,12 @@ $(".search-btn").click(function(){
 });
 
 $(".search-close-btn").click(function(){
-    console.log("segweg")
     $(".search-container").removeClass("active");
    
 });
 
 
 $(".category-item").mouseenter(function(){
-    console.log("segweg")
     $(".category-item").removeClass("hover");
     $(this).addClass("hover")
 });
@@ -58,7 +56,7 @@ $(window).scroll(function(){
 })
 
 $("[data-tab]").click(function(e){
-    e.preventDefault;
+    e.preventDefault();
     var activeTab = $(this).attr("data-tab");
     $(".modal-tab, .modal-auth-form").removeClass("active");
     $(`.modal-tab[data-tab="${activeTab}"]`).addClass("active");
@@ -70,8 +68,26 @@ $(".modal-close").click(function(){
 })
 
 $("[data-modal]").click(function(e){
-    e.preventDefault;
+    e.preventDefault();
     var activeModal = $(this).attr("data-modal");
     $(".modal").removeClass("active");
     $(`#${activeModal}`).addClass("active");
 })
+$(".stars-item input").change(function(){
+    var selectRating = $(this).attr('value');
+    $(this).closest(".stars-wrap").attr("data-rating", selectRating);
+    $(this).closest(".stars-wrap").find(".stars-item").removeClass("active");
+    $(this).closest(".stars-item").addClass("active");
+    $(this).closest(".stars-wrap").find(".current-rating").html(`(${selectRating})`);
+})
+$(document).ready(function(){
+    $(".stars-wrap").each(function(){
+        var rating = $(this).attr('data-rating');
+        $(this).find(`input[value='${rating}']`).closest(".stars-item").addClass("active");
+        $(this).find(".current-rating").html(`(${rating})`);
+    })
+
+    
+})
+    
+
