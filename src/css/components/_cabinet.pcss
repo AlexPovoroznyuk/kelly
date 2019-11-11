@@ -1,0 +1,176 @@
+.cabinet{
+    font-size: calc(0.25em + 5px);
+    padding-top: 100px;
+    padding-bottom: 14em;
+    .cabinet-menu{
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+        .head-menu{
+            background-color: #bf9760;
+            background-image: linear-gradient(to top, rgba(83, 91, 94, 0.09) 0%, rgba(254, 254, 254, 0.09) 10%, rgba(78, 82, 84, 0.09) 51%, rgba(253, 253, 253, 0.09) 84%, rgba(83, 91, 94, 0.09) 100%);
+            padding: 1.5em 5em;
+            /* cursor: pointer; */
+            position: relative;
+            .icon{
+                position: absolute;
+                top: 1.7em;
+                left: 2em;
+            }
+            span{
+                color: #ffffff;
+                font-family: "PoiretOne";
+                font-size: 1.8em;
+                font-weight: 400;
+                letter-spacing: 0.18px;
+            }
+            i{
+                color: #ffffff; 
+                font-size: 1.8em;
+            }
+        }
+        .cab-menu-item{
+            padding: 15px 5em;
+            outline: none;
+            border: none;
+            width: 100%;
+            background: transparent;
+            transition: .3s;
+            position: relative;
+            text-align: left;
+            &:hover{
+                background: #9d74a0;
+                span{
+                    color: #ffffff;
+                }
+            }
+            span{
+                color: #7e7e7e;
+                font-family: "FuturaPT";
+                font-size: 1.8em;
+                font-weight: 300;
+                transition: .3s;
+            }
+            i{
+                font-size: 1.8em;
+                margin-left: auto; 
+                color: #ffffff;
+            }
+            .arrow{
+                position: absolute;
+                top: 2.1em;
+                right: 2em;
+            }
+        }
+    }
+    .personal-data{
+        width: 80%;
+        margin: 0 auto; 
+        .caption{
+            margin-bottom: 2em;
+            span{
+                color: #313131;
+                font-family: "PoiretOne";
+                font-size: 3em;
+                font-weight: 400;
+            }
+        }
+        legend{
+            color: #313131;
+            font-family: "FuturaPT";
+            font-size: 2.4em;
+            font-weight: 300;
+            border: none;
+            padding-top: 1.1em;
+        }
+        .adress{
+            span{
+                color: #5b5b61;
+                font-family: "FuturaPT";
+                font-size: 1.8em;
+                font-weight: 300;
+                &.nuber-icon{
+                    color: #9f77a2;
+                    border-radius: 50%;
+                    border: 1px solid #9d74a0;
+                    color: #9f77a2;
+                    width: 28px;
+                    height: 28px;
+                    line-height: 28px;
+                    margin-right: 15px;
+                    text-align: center;
+                    display: inline-block;
+                }
+            }
+        }
+        label{
+            color: #5b5b61;
+            font-family: "FuturaPT";
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 0.45px;
+            width: 100%;
+            margin-bottom: 10px;
+            span{
+                color: #f16e7d;
+            }
+            input{
+                float: right;
+                min-width: 270px;
+                padding: 10px 20px;
+                font-size: 0.7em;
+                border-radius: 3px;
+                border: 1px solid #e6e6e6;
+                outline: none;
+            }
+        }
+        fieldset{
+            border-bottom: 1px solid #e6e6e6;
+             
+            &:first-child{
+                border-top: 1px solid #e6e6e6;
+            }
+            button{
+                display: block;
+                margin-left: auto;
+                background: transparent;
+                border: none;
+                outline: none;
+                margin-bottom: 2.5em;
+                padding: 0;
+                span{
+                    color: #9d74a0;
+                    font-family: "FuturaPT";
+                    font-size: 1.6em;
+                    font-weight: 400;
+                }
+            }
+            .new-pass{
+                margin-bottom: 2.5em;
+            }
+            a{
+                color: #9d74a0;
+                font-family: "FuturaPT";
+                font-size: 1.8em;
+                font-weight: 400;
+                text-decoration: none;
+            }
+        }
+        .submit{
+            border: none;
+            outline: none;
+            padding: 8px 3em;
+            margin-top: 2.5em;
+            margin-left: auto;
+            display: block;
+            border-radius: 3px;
+            background-color: #9d74a0;
+            background-image: linear-gradient(to top, rgba(83, 91, 94, 0.09) 0%, rgba(254, 254, 254, 0.09) 10%, rgba(78, 82, 84, 0.09) 51%, rgba(253, 253, 253, 0.09) 84%, rgba(83, 91, 94, 0.09) 100%), linear-gradient(to top, rgba(101, 51, 96, 0.53) 0%, rgba(140, 96, 144, 0.53) 100%);
+            span{
+                color: #ffffff;
+                font-family: "FuturaPT";
+                font-size: 1.6em;
+                font-weight: 300;
+            }
+        }
+    }
+}
