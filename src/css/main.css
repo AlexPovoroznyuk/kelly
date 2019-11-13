@@ -39,3 +39,5 @@ Main style file
 @import "./components/_cabinet.pcss";
 @import "./components/_favorites.pcss";
 @import "./components/_my-order.pcss";
+
+@import "./components/_pc-comments.pcss";
