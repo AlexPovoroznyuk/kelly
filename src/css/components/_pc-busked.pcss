@@ -1,0 +1,104 @@
+.pc-busked{
+    width: 80%;
+    margin: 0 auto;
+    .caption{
+        margin-bottom: 2.7em;
+        span{
+            color: #313131;
+            font-family: "PoiretOne";
+            font-size: 3em;
+            font-weight: 400;
+        }
+    }
+    .column-1{
+        width: 25%;
+    }
+    .column-2{
+        width: 50%;
+    }
+    .busket-header, .busket-footer{
+        display: flex;
+        margin: 5px 0;
+        .column-1, .column-2{
+            span{
+                color: #6f7680;
+                font-family: "FuturaPT";
+                font-size: 1.6em;
+                font-weight: 300;
+            }
+            &.price{
+                span{
+                    color: #9d74a0;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .busked-item{
+        display: flex;
+        align-items: center;
+        padding: 1.5em 0;
+        border-top: 1px solid #e6e6e6;
+        &:last-child{
+            border-bottom: 1px solid #e6e6e6;
+        }
+    }
+    .item-text{
+        color: #7e7e7e;
+        font-family: "FuturaPT";
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .busked-counter{
+        button{
+            background: transparent;
+            border: none;
+            outline: none;
+            padding: 0;
+            cursor: pointer;
+        }
+        .arrow{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #bababa;
+            margin-left: 5px;
+            /* border: 1px solid red; */
+            i{
+                font-size: 10px;
+                color: #bbbbbb;
+            }
+        }
+        .next{
+            margin-right: 2.5em;
+        }
+        .counter{
+            color: #6f7680;
+            font-size: 13px;
+        }
+        .delete{
+            color: #7e7e7e;
+            text-decoration: underline;
+        }
+    }
+    .price{
+        span{
+            color: #9d74a0;
+            font-size: 1.6em;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+    .busket-footer{
+        .column-1, column-2{
+            span{
+                font-size: 1.8em;
+            }
+        }
+    }
+    .last{
+        text-align: right;
+    }
+    
+}
