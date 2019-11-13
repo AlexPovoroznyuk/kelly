@@ -1,0 +1,35 @@
+<div class="pc-my-order @@display" >
+    <div class="caption">
+        <span>Мої замовлення</span>
+    </div>
+    <div class="order-list">
+        @@include('./_order-item.html',{
+            "number": "№285964",
+            "date": "29 вересня 2019 14:08",
+            "quantity": "2 товара",
+            "price": "7 000 UAH",
+            "status": "Відправлено",
+            "status-class": "send",
+            "is-open": "open"
+        })
+        @@include('./_order-item.html',{
+            "number": "№285964",
+            "date": "9 червня 2019 14:08",
+            "quantity": "2 товара",
+            "price": "7 000 UAH",
+            "status": "Отримано",
+            "status-class": "received",
+            "is-open": ""
+        })
+        @@include('./_order-item.html',{
+            "number": "№285964",
+            "date": "29 вересня 2019 14:08",
+            "quantity": "2 товара",
+            "price": "17 000 UAH",
+            "status": "Відмінено",
+            "status-class": "denied",
+            "is-open": ""
+        })
+    </ul>
+    
+</div>

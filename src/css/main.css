@@ -38,3 +38,4 @@ Main style file
 @import "./components/_catalog.pcss";
 @import "./components/_cabinet.pcss";
 @import "./components/_favorites.pcss";
+@import "./components/_my-order.pcss";
