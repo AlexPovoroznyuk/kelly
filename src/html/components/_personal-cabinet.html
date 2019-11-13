@@ -55,7 +55,12 @@
             </div>
         </div>
         <div class="col-md-9">
-            @@include('./cabinet/_personal-data.html')
+            @@include('./cabinet/_personal-data.html',{
+                "display": "d-none"
+            })
+            @@include('./cabinet/_ favorites.html',{
+                "display": ""
+            })
         </div>
     </div>
 </div>
