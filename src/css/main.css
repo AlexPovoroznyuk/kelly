@@ -42,3 +42,5 @@ Main style file
 
 @import "./components/_pc-comments.pcss";
 @import "./components/_pc-busked.pcss";
+@import "./components/_tickets.pcss";
+@import "./components/_ticked-table.pcss";

@@ -1,0 +1,71 @@
+<div class="tickets">
+    <div class="caption">
+        <p>Мої тікети</p>
+    </div>
+    <div class="create-ticket">
+        <div class="create-ticket-caption">
+            <p>Створити новий тікет</p>
+        </div>
+        <form>
+            <label>
+                <span>Тема</span>
+                <input name="topic" type="text" placeholder="" />
+            </label>
+            <label>
+                <span>Повідомлення</span>
+                <textarea></textarea>
+            </label>
+            <div class="button-wrap">
+                <button type="reset" class="reset">
+                    <span>Відмінити</span>
+                </button>
+                <button type="submit" class="submit">
+                    <span>Відправити</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="tickets-table">
+        <div class="custom-row t-header">
+            <div class="cell cell-1">
+                <span>Тікет №</span>
+            </div>
+            <div class="cell cell-2">
+                <span>Тема</span>
+            </div>
+            <div class="cell cell-3">
+                <span>Статус</span>
+            </div>
+            <div class="cell cell-4">
+                <span>Повідомлення</span>
+            </div>
+        </div>
+        @@include('./_ticket-item.html', {
+            "number": "3",
+            "subject": "Повернення товару",
+            "status": "Відповідь",
+            "user-name": "Олена Прокопенко",
+            "user-message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?",
+            "kelly-message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+            "is-open": ""
+        })
+        @@include('./_ticket-item.html', {
+            "number": "2",
+            "subject": "Оплата карткою",
+            "status": "Відповідь",
+            "user-name": "Олена Прокопенко",
+            "user-message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?",
+            "kelly-message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+            "is-open": "open-row"
+        })
+        @@include('./_ticket-item.html', {
+            "number": "1",
+            "subject": "Доставка",
+            "status": "Виконано",
+            "user-name": "Олена Прокопенко",
+            "user-message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?",
+            "kelly-message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+            "is-open": ""
+        })
+    </div>
+</div>

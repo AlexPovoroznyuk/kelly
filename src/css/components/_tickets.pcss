@@ -1,0 +1,85 @@
+.tickets{
+    font-size: calc(0.25vw + 5px);
+    padding-left: 13em; 
+    p{
+        margin: 0;
+    }
+    button{
+        border: none;
+        background: none;
+        outline: none;
+        padding: 0;
+        cursor: pointer; 
+        padding: 1.2em 2.4em;
+        display: block;
+    }
+    .caption{
+        margin-bottom: 6em;
+        p{
+            color: #313131;
+            font-family: "PoiretOne";
+            font-size: 3em;
+            font-weight: 400;
+        }
+    }
+    .create-ticket{
+        padding-left: 4em;
+        background-color: #fafafa;
+        margin-bottom: 9em;
+    }
+    .create-ticket-caption{
+        margin-bottom: 2.8em;
+        p{
+            color: #313131;
+            font-family: "FuturaPT";
+            font-size: 2.4em;
+            font-weight: 300;
+        }
+    }
+    form{
+        max-width: 590px;
+        
+        span, input, textarea{
+            color: #6f7680;
+            font-family: "FuturaPT";
+            font-size: 1.6em;
+            font-weight: 300;
+        }
+        input, textarea{
+            width: 70%;
+            margin-left: auto;
+            border-radius: 3px;
+            border: 1px solid #e6e6e6;
+            resize: none;
+            outline: none;
+            padding: 1em 1.6em;
+        }
+        textarea{
+            min-height: 7em;
+        }
+        .submit{
+            border-radius: 3px;
+            background-color: #9d74a0;
+            background-image: linear-gradient(to top, rgba(83, 91, 94, 0.09) 0%, rgba(254, 254, 254, 0.09) 10%, rgba(78, 82, 84, 0.09) 51%, rgba(253, 253, 253, 0.09) 84%, rgba(83, 91, 94, 0.09) 100%), linear-gradient(to top, rgba(101, 51, 96, 0.53) 0%, rgba(140, 96, 144, 0.53) 100%);
+            span{
+                color: #ffffff;
+            }
+        }
+        .reset{
+            span{
+                color: #865b87;
+            }
+        }
+    }
+    label{
+        width: 100%;
+        display: flex;
+        margin: 0;
+        margin-bottom: 2em;
+    }
+    .button-wrap{
+        width: fit-content;
+        display: flex;
+        margin-left: auto;
+    }
+}
