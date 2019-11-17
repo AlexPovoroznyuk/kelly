@@ -2,6 +2,9 @@
     font-size: calc(0.25vw + 5px);
     padding-top: 100px;
     margin-bottom: 7em;
+    @media(max-width: 920px){
+        font-size: calc(0.25vw + 8px);
+    }
     .link{
         p{
             font-family: "FuturaPT";
@@ -24,6 +27,9 @@
             font-weight: 300;
             font-size: 4.6em;
             text-align: center;
+            @media(max-width: 600px){
+                font-size: 3em;
+            }
         }
     }
     .separator{
@@ -66,13 +72,19 @@
             margin: 0 auto;
             width: fit-content;
             align-items: center;
-            
+            @media(max-width: 600px){
+                width: 100%;
+                justify-content: space-between;
+            }
             .number{
                 border: none;
                 outline: none;
                 background: transparent;
                 padding: 0;
                 padding: 0 10px;
+                @media(max-width: 600px){
+                    padding: 0;
+                }
                 span{
                     color: #4a4a4a;
                     font-family: "FuturaPT";

@@ -41,12 +41,31 @@
             color: #7e7e7e;
             font-family: "FuturaPT";
             font-weight: 300;
+            @media(max-width: 770px){
+                text-align: left;
+                font-size: 16px;
+            }
         }
         .contact-item:nth-child(2){
             text-align: center;
+            @media(max-width: 770px){
+                text-align: left;
+            }
         }
         .contact-item:nth-child(3){
             text-align: right;
+            @media(max-width: 770px){
+                text-align: left;
+            }
         }
     }
+    .all-contacts{
+        .contact-item {
+            @media(max-width: 770px){
+                text-align: left;
+            }
+        }
+    }
+    
+    
 }
