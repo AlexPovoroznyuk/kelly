@@ -1,0 +1,140 @@
+.tickets-table{
+    max-width: 670px;
+    width: 100%;
+    .custom-row{
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid #e6e6e6;
+
+    }
+    .cell{
+        padding: 1.8em;
+        span{
+            font-family: "FuturaPT";
+            color: #313131;
+            font-size: 1.6em;
+            font-weight: 400;
+        }
+    }
+    .cell-1{
+        width: 14%;
+        span{
+            color: #9d74a0;
+        }
+        i{
+            color: #9d74a0;
+            font-size: 1.6em; 
+            transition: .3s;
+        }
+    }
+    .cell-2{
+        width: 18%;
+        span{
+            color: #6f7680;
+            font-size: 1.4em;
+            font-weight: 300;
+        }
+    }
+    .cell-3{
+        width: 14%;
+        span{
+            color: #c29d6b;
+            font-size: 1.4em;
+        }
+    }
+    .cell-4{
+        width: 58%;
+        text-align: right;
+    }
+    .t-header{
+        span{
+            color: #313131;
+            font-family: "FuturaPT";
+            font-size: 1.6em;
+            font-weight: 400;
+        }
+    }
+    .ticket-message{
+        text-align: left;
+        width: 100%;
+        display: none;
+        p{
+            color: #606771;
+            font-size: 1.6em;
+            font-family: "FuturaPT";
+            font-weight: 300;
+        }
+        .user-name{
+            margin-bottom: 1em;
+            p{
+                color: #7e7e7e;
+                font-size: 14px;
+            }
+        }
+        .kelly{
+            margin-bottom: 1em;
+            text-align: right;
+            p{
+                color: #744472;
+                font-family: "Century Gothic";
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+        .message{
+            padding: 1.5em 2.4em;
+            border-radius: 5px;
+            margin-bottom: 2.5em;
+        }
+        .user-message{
+            background-color: #f4f4f4;
+        }
+        .kelly-message{
+            background-color: #f5e9f5;
+        }
+        .is-answer{
+            display: flex;
+            align-items: center;
+            p{
+                color: #313131;
+                font-family: "FuturaPT";
+                font-size: 1.6em;
+                font-weight: 300; 
+            }
+            button{
+                border-radius: 3px;
+                padding: 1em 2em;
+                span{
+                    color: #ffffff;
+                    font-family: "FuturaPT";
+                    font-size: 1.6em;
+                    font-weight: 300;
+                }
+            }
+            .yes{
+                background-color: #9d74a0;
+                background-image: linear-gradient(to top, rgba(83, 91, 94, 0.09) 0%, rgba(254, 254, 254, 0.09) 10%, rgba(78, 82, 84, 0.09) 51%, rgba(253, 253, 253, 0.09) 84%, rgba(83, 91, 94, 0.09) 100%), linear-gradient(to top, rgba(101, 51, 96, 0.53) 0%, rgba(140, 96, 144, 0.53) 100%);
+                margin-right: 1em;
+            }
+            .no{
+                
+                background-color: #b4b4b4;
+            }
+        }
+    }
+    .open-row{
+        .cell-1{
+            i{
+                transform: rotate(180deg);
+            }
+        }
+        .cell-4{
+            .prevuew{
+                display: none;
+            }
+        }
+        .ticket-message{
+            display: block;
+        }
+    }
+}

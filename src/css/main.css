@@ -36,3 +36,11 @@ Main style file
 @import "./components/_payment-info.pcss";
 @import "./components/_faq.pcss";
 @import "./components/_catalog.pcss";
+@import "./components/_cabinet.pcss";
+@import "./components/_favorites.pcss";
+@import "./components/_my-order.pcss";
+
+@import "./components/_pc-comments.pcss";
+@import "./components/_pc-busked.pcss";
+@import "./components/_tickets.pcss";
+@import "./components/_ticked-table.pcss";

@@ -1,0 +1,33 @@
+<div class="o-l-item @@is-open">
+    <div class="order-item">
+        <button class="order-number column">
+            <span class="main-text">@@number</span>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+        <div class="column-2">
+            <span class="main-text">@@date</span>
+        </div>
+        <div class="column">
+            <span class="main-text">@@quantity</span>
+        </div>
+        <div class="column">
+            <span class="main-text item-price">@@price</span>
+        </div>
+        <div class="status column">
+            <span class="main-text send @@status-class">@@status</span>
+        </div>
+    </div>
+    @@include('_my-order-item.html', {
+        "img": "img/pics/favorites-ring.png",
+        "name": "Перстень Назва",
+        "quantity": "1",
+        "price": "3500 uah"
+    })
+    @@include('_my-order-item.html', {
+        "img": "img/pics/favorites-ring.png",
+        "name": "Перстень Назва",
+        "quantity": "1",
+        "price": "3500 uah" 
+    })
+    
+</div>

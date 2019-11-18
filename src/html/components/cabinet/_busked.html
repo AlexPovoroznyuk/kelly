@@ -1,0 +1,46 @@
+<div class="pc-busked @@display" >
+    <div class="caption">
+        <span>Мій кошик</span>
+    </div>
+    <div class="busket-list">
+        <div class="busket-header">
+            <div class="column-1">
+                <span>Товар</span>
+            </div>
+            <div class="column-2">
+                <span>Кількість</span>
+            </div>
+            <div class="column-1 last">
+                <span>Ціна</span>
+            </div>
+        </div>
+        <div class="busked-list">
+            @@include('_busked-item.html', {
+                "img": "img/pics/favorites-ring.png",
+                "quantity": "1",
+                "price": "3500 uah"
+            })
+            @@include('_busked-item.html', {
+                "img": "img/pics/favorites-ring.png",
+                "quantity": "1",
+                "price": "3500 uah"
+            })
+            @@include('_busked-item.html', {
+                "img": "img/pics/favorites-ring.png",
+                "quantity": "1",
+                "price": "3500 uah"
+            })
+        </div>
+        <div class="busket-footer">
+            <div class="column-1">
+                <span>Усього</span>
+            </div>
+            <div class="column-2">
+                <span>3 товари</span>
+            </div>
+            <div class="column-1 price last">
+                <span>10500 uah</span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -2,6 +2,12 @@
     font-size: calc(0.25vw + 5px);
     padding-top: 100px;
     margin-bottom: 12em;
+    @media(max-width: 1200px){
+        font-size: calc(0.25vw + 7px);
+    }
+    @media(max-width: 1200px){
+        font-size: calc(0.25vw + 9px);
+    }
     img{
         width: 100%;
     }
@@ -28,6 +34,9 @@
             font-family: "PoiretOne";
             font-size: 4.2em;
             font-weight: 400;
+            @media(max-width: 800px){
+                font-size: 3em;
+            }
         }
     }
     .article-date{
@@ -113,6 +122,10 @@
                 margin-bottom: 2em;
                 &:first-child{
                     margin-right: 2em;
+                }
+                @media(max-width: 600px){
+                    width: 100%;
+                    max-width: 100%;
                 }
             }
             input, textarea{

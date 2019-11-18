@@ -1,0 +1,111 @@
+.pc-my-order{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20em;
+    .caption{
+        margin-bottom: 2.7em;
+        span{
+            color: #313131;
+            font-family: "PoiretOne";
+            font-size: 3em;
+            font-weight: 400;
+        }
+    }
+    .column{
+        width: 16.6%;
+    }
+    .column-2{
+        width: 33.2%;
+    }
+    .my-order-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:  1.5em 0;  
+    
+        .item-text{
+            color: #7e7e7e;
+            font-size: 1.6em;
+            font-family: "FuturaPT";
+            font-weight: 400;
+        }
+        .name{
+            span{
+                font-family: "PoiretOne";
+            }
+        }
+        .quantity{
+            span{
+                font-weight: 300;
+            }
+        }
+        .price{
+            span{
+                color: #9d74a0;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .order-list{
+        width: 100%;  
+    }
+    .o-l-item{
+        border-bottom: 1px solid #e6e6e6;
+        &:first-of-type{
+            border-top: 1px solid #e6e6e6;
+        }
+    }
+    .order-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5em 0;
+        
+        .main-text{
+            color: #606771;
+            font-family: "FuturaPT";
+            font-size: 1.6em;
+            font-weight: 400;
+        }
+        .item-price{
+            color: #606771;
+            text-transform: uppercase;
+        }
+        .order-number{
+            background: transparent;
+            border: none;
+            outline: none;
+            padding: none;
+            padding: 0;
+            text-align: left;
+            span{
+                color: #9d74a0;
+            }
+            i{
+                color: #9d74a0;
+                font-size: 1.6em;
+                margin-left: 0.1em;
+            }
+        }
+        .send{
+            font-size: 1.4em;
+            color: #c19d6a;
+        }
+        .received{
+            font-size: 1.4em;
+            color: #9d74a0;
+        }
+        .denied{
+            font-size: 1.4em;
+            color: #e24651;
+        }
+    }
+    .my-order-item{
+        display: none;
+    }
+    .open{
+        .my-order-item{
+            display: flex;
+        }
+    }
+}
