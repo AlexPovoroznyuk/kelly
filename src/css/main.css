@@ -8,7 +8,7 @@ Main style file
 /* Put your vendor styles here */
 
 @import "../../node_modules/normalize.css/normalize.css";
-@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+/* @import "../../node_modules/bootstrap/dist/css/bootstrap.css"; */
 @import "../../node_modules/magnific-popup/dist/magnific-popup.css";
 @import "../../node_modules/owl-carousel/owl-carousel/owl.carousel.css";
 
@@ -17,6 +17,7 @@ Main style file
 
 /* Put you custom styles below */
 @import "./components/fonts.css";
+@import "./components/bootstrap.min.css";
 @import "./components/_general.css";
 @import "./components/_reuse-elements.pcss";
 @import "./components/font-awesome.css";
