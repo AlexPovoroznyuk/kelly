@@ -95,7 +95,7 @@ $(document).ready(function() {
 $(".owl-carousel").owlCarousel({
     items : 4,
     itemsDesktop :[1199,3],
-    itemsDesktopSmall:[979,2],
+    itemsDesktopSmall:[979,3],
     navigation: true,
     navigationText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
     
@@ -103,7 +103,7 @@ $(".owl-carousel").owlCarousel({
 
 $(".offer-week").owlCarousel({
     items : 2,
-    itemsDesktop :[1199,1],
+    itemsDesktop :[1199,2],
 
     navigation: true,
     navigationText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],

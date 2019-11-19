@@ -13,10 +13,17 @@ main {
 
         .to-be-item {
             position: relative;
+            @media(max-width: 991px){
+                padding-top: 4.5em;
+                font-size: 2.1em;
+            }
         }
 
         .to-be-item:nth-child(1) {
             padding-top: 9em;
+            @media(max-width: 991px){
+                padding-top: 8em;
+            }
         }
 
         .to-be-item:nth-child(2) {
@@ -93,7 +100,9 @@ main {
         padding: 0 15px;
         max-width: 775px;
         margin: 0 auto 8em;
-
+        @media(max-width: 992px){
+            font-size: 1.3em;
+        }
         p {
             font-size: 1.8em;
             text-align: justify;
@@ -139,11 +148,20 @@ main {
             color: #38404a;
             font-family: "PoiretOne";
             font-weight: 200;
+            @media(max-width: 567px){
+                margin-bottom: 1em;
+            }
         }
 
         .back-img {
+            @media(max-width: 991px){
+                margin-bottom: 2em;
+            }
             img {
                 width: 110%;
+                @media(max-width: 991px){
+                    width: 100%;
+                }
             }
         }
 
@@ -154,6 +172,9 @@ main {
             font-weight: 400;
         }
     }
+}   
+.offer-week-wr{
+    padding: 0 15px;
 }
     .offer-week {
         .owl-wrapper-outer {
@@ -199,6 +220,7 @@ main {
     .new-items {
         .owl-wrapper-outer {
             padding: 15px 0;
+            width: calc(100% + 2px);
 
         }
 
@@ -229,7 +251,11 @@ main {
     .product-wr {
         font-size: 10px;
         height: 42em;
+        @media(max-width: 991px){
+            height: auto;
+        }
     }
+
 
     
 
