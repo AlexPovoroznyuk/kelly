@@ -44,3 +44,5 @@ Main style file
 @import "./components/_pc-busked.pcss";
 @import "./components/_tickets.pcss";
 @import "./components/_ticked-table.pcss";
+@import "./components/_product-final.pcss";
+@import "./components/_product-item.pcss";
