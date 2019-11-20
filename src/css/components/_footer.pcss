@@ -17,20 +17,73 @@ z-index: -1;
     }
     .container {
         padding-top: 3.5em;
+        @media(max-width: 991px){
+            padding-top: 4.9em;
+        }
     }
 
     .column {
         display: flex;
+        @media(max-width: 991px){
+            display: flex;
+            font-size: 1.6em;
+            padding: 0 36px;
+        }
     }
-
+    .logo{
+        @media(max-width: 991px){
+            display: none;
+        }
+    }
     .schedule {
         justify-content: center;
+        @media(max-width: 991px){
+           justify-content: flex-start;
+           margin-bottom: 30px;
+        }
     }
 
     .contacts {
         justify-content: flex-end;
+        @media(max-width: 991px){
+            justify-content: flex-start;
+         }
+         @media(max-width: 991px) and (min-width: 600px){
+            width: 280px;
+        }
     }
-
+    .footer-nav{
+        @media(max-width: 991px){
+            margin-bottom: 31px;
+        }
+        @media(max-width: 991px) and (min-width: 600px){
+            width: 280px;
+        }
+    }
+    .destop-txt{
+        display: none;
+        @media(min-width: 992px){
+            display: inline;
+        }
+    }
+    .mobile-txt{
+        display: inline;
+        @media(min-width: 992px){
+            display: none;
+        }
+    }
+    .footer-wr{
+        @media(max-width: 991px) and (min-width: 600px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+.footer-item{
+    @media(max-width: 991px){
+        margin-bottom: 10px;
+    }
+}
     a {
         text-decoration: none;
         outline: none;
@@ -42,16 +95,36 @@ z-index: -1;
         font-size: 1.8em;
         font-family: "FuturaPT";
         font-weight: 300;
+        @media(max-width: 991px){
+            line-height: 1.46;
+            font-size: 1.9em;
+        }
     }
-    .descr p{
+    .descr {
+        @media(max-width: 991px){
+            margin-bottom: 32px;
+        }
+    
+    p{
         font-weight: 400;
+        span{
+            @media(max-width: 991px){
+                display: block;
+            }
+        }
     }
+}
 
-    .caption p {
+    .caption{ 
+        @media(max-width: 991px){
+margin-bottom: 13px;
+        }
+    
+    p {
         font-size: 2.2em;
         font-weight: 400;
     }
-
+}
     .for-icon {
         position: relative;
 
@@ -75,7 +148,10 @@ z-index: -1;
         max-width: 120px;
         justify-content: space-between;
         margin-top: 2.5em;
-
+        @media(max-width: 991px){
+            max-width: 164px;
+    margin-top: 4.5em;
+        }
         .icon {
             font-size: 2.6em;
             color: #cca773;
@@ -100,6 +176,9 @@ z-index: -1;
             font-size: 1.6em;
             padding: 10px 0;
             letter-spacing: 0.4px;
+            @media(max-width: 991px){
+                font-size: 2.9em;
+            }
         }
     }
 }
