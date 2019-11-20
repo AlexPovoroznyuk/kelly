@@ -154,6 +154,7 @@ header {
     @media(max-width: 767px) {
         justify-content: space-between;
         width: 100%;
+        max-width: 105px;
     }
 
     &>button {
@@ -306,7 +307,10 @@ header {
 .right-menu {
     display: flex;
     align-items: center;
-
+    @media(max-width: 767px){
+        max-width: 105px;
+        margin-left: auto;
+    }
     .currency {
         font-family: "FuturaPT";
         font-size: 18px;
