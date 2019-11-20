@@ -6,3 +6,4 @@
 
 //=require ../../node_modules/bootstrap/dist/js/bootstrap.js
 //=require ../../node_modules/magnific-popup/dist/jquery.magnific-popup.js
+

@@ -111,3 +111,6 @@ $(".offer-week").owlCarousel({
 });
 });
 
+$('.nselect-1').nSelect({
+    theme: 'custom-sort-dropdown'
+});
