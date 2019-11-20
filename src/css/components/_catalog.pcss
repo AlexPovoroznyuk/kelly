@@ -200,6 +200,9 @@
         display: flex;
         /* align-items: stretch; */
         flex-wrap: wrap;
+        @media(max-width: 567px){
+            justify-content: space-between;
+        }
     }
     .product-category-item{
         
@@ -209,6 +212,10 @@
         padding-top: 3.5em;
         width: calc(33% - 30px);
         border: 1px dashed #ffffff;
+        @media(max-width: 567px){
+            margin: 10px 0;
+        width: calc(50% - 10px);
+        }
         &:hover{
             box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.16);
             .img-wrap::before{
@@ -252,6 +259,9 @@
     }
     .ceo-block{
         margin-top: 8em;
+        @media(max-width: 567px){
+            font-size: 1.4em;
+        }
         p{
             color: #b6b6b6;
             font-family: "FuturaPT";
