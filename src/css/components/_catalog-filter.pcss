@@ -2,25 +2,190 @@
     padding-top: 7em;
 }
 
+.catalog-filter-title {
+    color: #313131;
+    font-family: "PoiretOne";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.36px;
+    margin-bottom: 35px;
+
+    &.search-result {
+        p {
+            margin-top: 15px;
+            color: #6d6d6d;
+            font-family: "FuturaPT";
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0.14px;
+        }
+    }
+}
+
+.catalog-filter {}
+
+.show {
+
+
+    .show-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .show-label {}
+
+    .show-dropdown {
+        min-width: 65px;
+    }
+}
+
+.sort-wr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sort-label,
+.show-label {
+    color: #6d6d6d;
+    font-family: "FuturaPT";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+    margin-right: 15px;
+
+}
+
+.sort {
+    display: flex;
+
+    .sort-container {
+        display: flex;
+        align-items: center;
+
+
+
+    }
+}
+
+.sort-dropdown {
+    min-width: 175px;
+}
+
 .catalog-filter-content {
     font-size: calc(0.25vw + 5px);
-    .pagination-wr{
+    border-left: 1px solid #eee;
+    margin-bottom: 8em;
+
+    .filter-result-txt {
+        color: #6d6d6d;
+        font-family: "FuturaPT";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 0.35px;
+        margin-bottom: 20px;
+    }
+
+    .selected-filters-wr {
+        display: flex;
+        margin-bottom: 2px;
+    }
+
+    .selected-filters-item {
+        display: flex;
+        align-items: center;
+        padding: 3px 10px 5px;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+
+        border-radius: 3px;
+        background-color: #97729b;
+
+        &.delete-all {
+            background: transparent;
+            border: 1px solid #97729b;
+
+            span {
+                color: #97729b;
+            }
+
+            .delete-filter {
+
+                &::before,
+                &::after {
+                    background: #97729b;
+                }
+            }
+        }
+
+        span {
+            color: #ffffff;
+            font-family: "FuturaPT";
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.5;
+            letter-spacing: 0.4px;
+        }
+
+        .delete-filter {
+            width: 10px;
+            height: 10px;
+            position: relative;
+            margin-left: 5px;
+            margin-top: 2px;
+
+            &::before,
+            &::after {
+                content: "";
+                width: 100%;
+                height: 2px;
+                background: #fff;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                transform-origin: center;
+            }
+
+            &::before {
+                transform: rotate(-45deg);
+            }
+
+            &::after {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .pagination-wr {
         display: flex;
         justify-content: center;
         padding-bottom: 6em;
-        border-bottom: 1px solid #eeeeee;
+        
     }
+
     .category-wr {
         display: flex;
         align-items: center;
         margin-bottom: 6.5em;
+
         .category-item {
             width: 33.3333%;
             display: flex;
             align-items: center;
-            &:hover{
+
+            &:hover {
                 text-decoration: none;
             }
+
             img {
                 margin-right: 1.8em;
             }
@@ -35,36 +200,44 @@
             }
         }
     }
-    .ceo-block{
-        padding-bottom: 8em;
+
+    .ceo-block {
+        border-top: 1px solid #eeeeee;
         margin-top: 8em;
-        @media(max-width: 567px){
+
+        @media(max-width: 567px) {
             font-size: 1.4em;
         }
-        p{
+
+        p {
             color: #b6b6b6;
             font-family: "FuturaPT";
             font-size: 1.8em;
             font-weight: 300;
         }
-        .ceo-caption{
-            p{
+
+        .ceo-caption {
+            h3 {
                 color: #7e7e7e;
                 font-size: 3.6em;
+                font-family: "FuturaPT";
+                font-weight: 300;
             }
         }
     }
 }
 
-.filter-result-items{
+.filter-result-items {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 8em;
-    .product-wr{
+
+    .product-wr {
         width: 33.3333%;
-        height: 38em;        
-        &:hover{
+        height: 38em;
+
+        &:hover {
             z-index: 2;
         }
     }
-}    
+}
