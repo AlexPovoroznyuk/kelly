@@ -91,7 +91,10 @@ $(document).ready(function(){
 })
     
 $(document).ready(function() {
-   
+    $('.nselect-1').nSelect({
+        theme: 'custom-sort-dropdown'
+    }); 
+    console.log("dgseg")
 $(".owl-carousel").owlCarousel({
     items : 4,
     itemsDesktop :[1199,3],
@@ -111,6 +114,3 @@ $(".offer-week").owlCarousel({
 });
 });
 
-$('.nselect-1').nSelect({
-    theme: 'custom-sort-dropdown'
-});

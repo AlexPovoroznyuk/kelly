@@ -20,6 +20,7 @@ var gulp = require('gulp'),
 gulp.task('build-js', function () {
     var customJS = gulpFilter(config.pathTo.Src.JSCustom, {restore: true}),
         vendorJS = gulpFilter(config.pathTo.Src.JSVendor, {restore: true});
+        dropJS = gulpFilter(config.pathTo.Src.JSDrop, {restore: true});
 
     return gulp.src(config.pathTo.Src.JS)
         .pipe(plumber({
@@ -48,6 +49,23 @@ gulp.task('build-js', function () {
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(config.pathTo.Build.JSCustomBundle))
         .pipe(customJS.restore)
+
+        //
+            .pipe(dropJS)
+            .pipe(sourcemaps.init())
+            .pipe(jshint())
+            .pipe(jshint.reporter(stylish))
+            .pipe(babel({
+                presets: ['env']
+            }))
+            .pipe(gulp.dest(config.pathTo.Build.JSDropBundle))
+            .pipe(concat('jquery.nselect.js'))
+            .pipe(gulp.dest(config.pathTo.Build.JSDropBundle))
+            .pipe(rename({ suffix: '.min' }))
+            .pipe(uglify())
+            .pipe(sourcemaps.write('./'))
+            .pipe(gulp.dest(config.pathTo.Build.JSDropBundle))
+            .pipe(dropJS.restore)
         // Get vendor JS
         .pipe(vendorJS)
         .pipe(include())
@@ -60,4 +78,5 @@ gulp.task('build-js', function () {
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(config.pathTo.Build.JSVendorBundle))
         .pipe(reload({stream: true}));
+
 });
