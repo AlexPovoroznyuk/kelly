@@ -1,47 +1,135 @@
 <div class="product-final container">
-    <ul class="breadcrumb">
-        <li>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <a href="#">Головна</a>
-        </li>
-        <li>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <a href="#">Золото</a>
-        </li>
-        <li>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <a href="#">Перстні</a>
-        </li>
-        <li>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <a href="#">Жіночі</a>
-        </li>
-        <li>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <a href="#">Назва прикраси</a>
-        </li>
-    </ul>
+    <div class="row">
+        <ul class="breadcrumb">
+            <li>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <a href="#">Головна</a>
+            </li>
+            <li>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <a href="#">Золото</a>
+            </li>
+            <li>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <a href="#">Перстні</a>
+            </li>
+            <li>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <a href="#">Жіночі</a>
+            </li>
+            <li>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <a href="#">Назва прикраси</a>
+            </li>
+        </ul>
+    </div>
     <div class="row product-information">
-        <div class="col-md-1">
-            <div class="img-wrap">
-                <img src="img/pics/ring2.png" alt="" />
-            </div>
-            <div class="img-wrap">
-                <img src="img/pics/ring2.png" alt="" />
-            </div>
-            <div class="img-wrap">
-                <img src="img/pics/ring2.png" alt="" />
+        <div class="col-md-7 col-sm-7">
+            <div class="row ">
+                <div class="col-container">
+                    <div class="col-md-2 col-sm-2">
+                        <div class="img-wrap-container">
+                            <div class="img-wrap">
+                                <img src="img/pics/ring2.png" alt="" />
+                            </div>
+                            <div class="img-wrap">
+                                <img src="img/pics/ring2.png" alt="" />
+                            </div>
+                            <div class="img-wrap">
+                                <img src="img/pics/ring2.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-sm-10">
+                        <div class="img-wrap-big">
+                            <img src="img/pics/ring2.png" alt="" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="img-wrap-big">
-                <img src="img/pics/ring2.png" alt="" />
+        <!-- <div class="col-md-1 col-sm-2 col-xs-2">
+            <div class="img-wrap-container">
+                <div class="img-wrap">
+                    <img src="img/pics/ring2.png" alt="" />
+                </div>
+                <div class="img-wrap">
+                    <img src="img/pics/ring2.png" alt="" />
+                </div>
+                <div class="img-wrap">
+                    <img src="img/pics/ring2.png" alt="" />
+                </div>
             </div>
         </div>
+        <div class="col-md-6 col-sm-10 col-xs-10">
+            
+        </div> -->
         <div class="col-md-5 product-description">
             <div class="descript-caption">
                 <p>Перстень Назва</p>
             </div>
+            <div class="art-and-stars">
+                <div class="art">
+                    <p>арт. 12547</p>
+                </div>
+                @@include("./_stars.html", {
+                    "display": ""
+                })
+            </div>
+            <div class="status">
+                <p>В наявності</p>
+            </div>
+            <div class="price">
+                <p>3000 uah
+                    <span>3500 uah</span>
+                </p>
+            </div>
+            <div class="button-wrap">
+                <button class="to-basked">
+                    <span>В кошик</span>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </button>
+                <button class="to-favorite">
+                    <span>В обране</span>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="desscription">
+                <p class="product-title">Опис та характеристики</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <div class="haracter-list">
+                    <div class="li-half">
+                        <span>Матеріал</span>
+                    </div>
+                    <div class="li-half">
+                        <span class="product-title">Біле золото</span>
+                    </div>
+                
+                    <div class="li-half">
+                        <span>Проба</span>
+                    </div>
+                    <div class="li-half">
+                        <span class="product-title">585</span>
+                    </div>
+                
+                    <div class="li-half">
+                        <span>Вставка</span>
+                    </div>
+                    <div class="li-half">
+                        <span class="product-title">Цирконій</span>
+                    </div>
+                    <button class="all-haracter">
+                       <span>Всі характеристики</span> 
+                       <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="detal">
+                <a href="#" >Детальніше про оплату, доставку, гарантії
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            
         </div>
     </div>
     <div class="related-products">
@@ -83,6 +171,86 @@
                     "price": "3000 uah",
                     "old-price" : "3500 uah"
                 })
+            </div>
+        </div>
+    </div>
+    <div class="review-title">
+        <p>Відгуки про прикрасу</p>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="review">
+                
+                <div class="review-list">
+                    @@include('./_review-item.html', {
+                        "name": "Олена Прекрасна",
+                        "date": "16.06.2019",
+                        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                    })
+                    @@include('./_review-item.html', {
+                        "name": "Олена Прекрасна",
+                        "date": "16.06.2019",
+                        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                    })
+                    @@include('./_review-item.html', {
+                        "name": "Олена Прекрасна",
+                        "date": "16.06.2019",
+                        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                    })  
+                </div>
+                <div class="create-new-review">
+                    <div class="form-caption">
+                        <p>Залишити відгук</p>
+                    </div>
+                    <form action="#">
+                        <label>
+                            <span>Ваша оцінка</span>
+                            @@include('./_stars.html', {
+                                "display": "d-none"
+                            })
+                        </label>
+                        <div class="form-section">
+                            <input type="text" name="neme" placeholder="Ваше Ім’я" />
+                            <input type="email" name="email" placeholder="Email" />
+                        </div>
+                        <textarea name="comment" placeholder="Ваш коментар"></textarea>
+                        <button class="add-review">
+                            <div>
+                                <span>Добавити відгук</span>
+                            </div>
+                            <div class="plus">
+                                <span>+</span>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="services">
+                <div class="services-header">
+                    <button class="services-button selected">
+                        <span>Доставка</span>
+                    </button>
+                    <button class="services-button">
+                        <span>Оплата</span>
+                    </button>
+                    <button class="services-button">
+                        <span>Гарантія</span>
+                    </button>
+                </div>
+                <div class="services-body">
+                    <div class="service-elem">
+                        <p>До відділення Нової Пошти
+                            <span>Безкоштовно</span>
+                        </p>
+                    </div>
+                    <div class="service-elem">
+                        <p>Доставка кур’єром
+                            <span>100 грн</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
