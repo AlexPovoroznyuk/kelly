@@ -5,6 +5,9 @@
         width: 100%;
         display: flex;
         border-bottom: 1px solid #e6e6e6;
+        @media(max-width: 700px){
+            flex-wrap: wrap;
+        }
 
     }
     .cell{
@@ -26,6 +29,9 @@
             font-size: 1.6em; 
             transition: .3s;
         }
+        @media(max-width: 700px){
+            width: 33%;
+        }
     }
     .cell-2{
         width: 18%;
@@ -34,6 +40,10 @@
             font-size: 1.4em;
             font-weight: 300;
         }
+        @media(max-width: 700px){
+            width: 33%;
+            text-align: center;
+        }
     }
     .cell-3{
         width: 14%;
@@ -41,10 +51,17 @@
             color: #c29d6b;
             font-size: 1.4em;
         }
+        @media(max-width: 700px){
+            width: 33%;
+            text-align: right;
+        }
     }
     .cell-4{
         width: 58%;
         text-align: right;
+        @media(max-width: 700px){
+            width: 100%;
+        }
     }
     .t-header{
         span{
