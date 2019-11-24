@@ -73,7 +73,21 @@ letter-spacing: 0.4px;
     }
 }
 .adaptive-display{
-    @media(max-width: 990px){
+    @media(max-width: 991px){
         display: none;
     } 
+}
+.mobile-show{
+    display: none;
+    @media(max-width: 991px){
+        display: block;
+    }
+}
+
+.transparent-lnk{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
