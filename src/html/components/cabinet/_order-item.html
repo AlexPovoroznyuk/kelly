@@ -7,13 +7,13 @@
         <div class="column-2">
             <span class="main-text">@@date</span>
         </div>
-        <div class="column">
+        <div class="column adaptive-none">
             <span class="main-text">@@quantity</span>
         </div>
-        <div class="column">
+        <div class="column adaptive-none">
             <span class="main-text item-price">@@price</span>
         </div>
-        <div class="status column">
+        <div class="status column adaptive-none">
             <span class="main-text send @@status-class">@@status</span>
         </div>
     </div>
@@ -29,5 +29,19 @@
         "quantity": "1",
         "price": "3500 uah" 
     })
+    <div class="order-item adaptive-container">
+        <div class="column">
+            <span class="main-text">@@quantity</span>
+        </div>
+        <div>
+            <div class="">
+                <span class="main-text item-price">@@price</span>
+            </div>
+            <div class="status ">
+                <span class="main-text send @@status-class">@@status</span>
+            </div>
+        </div>
+        
+    </div>
     
 </div>
