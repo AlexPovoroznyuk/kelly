@@ -11,6 +11,9 @@
     transform: translateX(calc(100% + 10px));
     transition: .3s;
     z-index: 2;
+    @media(max-width: 460px){
+        max-width: unset;
+    }
     &.active{
         transform: translateX(0);
     }
