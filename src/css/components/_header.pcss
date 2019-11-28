@@ -648,8 +648,11 @@ header {
                         opacity: 1;
                         pointer-events: auto;
                         display: block;
-                        overflow: auto;
-    height: 625px;
+                        @media(min-width: 681px){
+                           overflow: auto;
+    height: 625px; 
+                        }
+                        
 
                     }
                 }
