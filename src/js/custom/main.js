@@ -3,15 +3,18 @@ $(".basket-btn").click(function(){
     if(!$(`[data-busket='${busket}']`).hasClass("active")){
         $(`[data-busket]`).removeClass("active");
         $(`[data-busket='${busket}']`).addClass("active");
+        $("body").addClass("modal-open");
     }
     else{
         $(`[data-busket='${busket}']`).removeClass("active"); 
+        $("body").removeClass("modal-open");
     }
     console.log(`[data-busket='${busket}']`)
 });
 
 $(".busket-container .close-triggrer button").click(function(){
     $(".busket-container").removeClass("active");
+    $("body").removeClass("modal-open");
 });
 
 
