@@ -2,13 +2,49 @@
     width: 80%;
     margin: 0 auto;
     padding-bottom: 20em;
+    @media(max-width: 991px){
+        width: auto;
+    }
+    @media(max-width: 800px){
+        font-size: calc(0.25vw + 8px);
+    }
     .caption{
         margin-bottom: 2.7em;
-        span{
+        @media(max-width: 991px) {
+            width: calc(100% + 30px);
+            position: relative;
+            left: -15px;
+            padding: 7px 15px;
+            text-align: center;
+            background-color: #97729b;
+            background-image: linear-gradient(to top, rgba(83, 91, 94, 0.09) 0%, rgba(254, 254, 254, 0.09) 10%, rgba(78, 82, 84, 0.09) 51%, rgba(253, 253, 253, 0.09) 84%, rgba(83, 91, 94, 0.09) 100%), linear-gradient(to top, rgba(101, 51, 96, 0.53) 0%, rgba(140, 96, 144, 0.53) 100%);
+            &::before{
+                content: "←";
+                position: absolute;
+                left: 15px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                font-size: 21px;
+                display: flex;
+                color: #fff;
+                align-items: center;
+            }
+        }
+
+        span {
             color: #313131;
             font-family: "PoiretOne";
             font-size: 3em;
             font-weight: 400;
+            @media(max-width: 991px){
+                color: #ffffff;
+                font-family: "FuturaPT";
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 1.65;
+                letter-spacing: 0.4px;
+            }
         }
     }
     .column{
@@ -16,6 +52,9 @@
     }
     .column-2{
         width: 33.2%;
+        @media(max-width: 700px){
+            text-align: right;
+        }
     }
     .my-order-item{
         display: flex;
@@ -30,6 +69,7 @@
             font-weight: 400;
         }
         .name{
+            text-align: right;
             span{
                 font-family: "PoiretOne";
             }
@@ -38,12 +78,23 @@
             span{
                 font-weight: 300;
             }
+            @media(max-width: 700px){
+                text-align: right;
+            }
         }
         .price{
+            @media(max-width: 700px){
+                text-align: right;
+            }
             span{
                 color: #9d74a0;
                 text-transform: uppercase;
             }
+        }
+    }
+    .empty{
+        @media(max-width: 700px){
+            display: none;
         }
     }
     .order-list{
@@ -107,5 +158,29 @@
         .my-order-item{
             display: flex;
         }
+    }
+    .adaptive-container{
+        display: none;
+        @media(max-width: 700px){
+            display: flex;
+        }
+    }
+    .adaptive-none{
+        @media(max-width: 700px){
+            display: none;
+        }
+    }
+    .column-wrap{
+        width: 83.4%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @media(max-width: 700px){
+            flex-direction: column;
+        }
+    }
+    .column-third{
+        width: 33%;
+        text-align: right;
     }
 }
