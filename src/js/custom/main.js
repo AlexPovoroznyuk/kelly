@@ -127,3 +127,12 @@ $(".offer-week").owlCarousel({
 });
 });
 
+$(".lang button").click(function(){
+    if(!($(this).closest(".lang").hasClass("opened"))){
+      $(this).closest(".lang").addClass("opened");  
+    }
+    else{
+        $(this).closest(".lang").removeClass("opened");  
+    }
+    
+})

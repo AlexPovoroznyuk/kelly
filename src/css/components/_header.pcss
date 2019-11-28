@@ -1,13 +1,14 @@
 .first-screen {
     position: relative;
     min-height: 43em;
-    
+
     background-size: cover;
     /* background-position: center;
      */
-     background-position-x: 50%;
+    background-position-x: 50%;
     background-position-y: 31%;
-    &::before{
+
+    &::before {
         content: '';
         position: absolute;
         top: 0;
@@ -15,8 +16,9 @@
         bottom: 0;
         left: 0;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.14) 100%);
-        
+
     }
+
     h1 {
         position: absolute;
         left: 0;
@@ -31,30 +33,64 @@
         padding: 0 15px;
         font-family: "PoiretOne";
         font-size: 60px;
-        @media(max-width: 567px){
+
+        @media(max-width: 567px) {
             font-size: 32px;
         }
     }
 
-    
+
 
 }
 
 header {
-    
-.container {
-    @media (max-width: 767px){
-        width: 100%;
+    .lang-drop {
+        position: absolute;
+        top: calc(100% - 6px);
+    left: -1px;
+    right: -1px;
+    width: calc(100% + 2px);
+    border-top: none;
+    opacity: 0;
+    pointer-events: none;
+
+        .drop-inner {
+            padding: 5px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    border-top: none;
+        }
+
+        .lang-item {
+            a {
+                font-family: FuturaPT;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: .45px;
+                font-size: 18px;
+    line-height: 24px;
+    color: #9d74a0;
+            }
+        }
     }
-    
-}
+
+    .container {
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+    }
+
     &.scrolled {
         background: #fff;
         padding-top: 0;
         padding-bottom: 0;
-        @media(max-width: 767px){
+
+        @media(max-width: 767px) {
             padding-top: 8px;
         }
+
         &.open-catalog,
         &.dark-header {
             background: #fff;
@@ -70,7 +106,8 @@ header {
             opacity: 1;
             pointer-events: auto;
             height: auto;
-            @media(max-width: 767px){
+
+            @media(max-width: 767px) {
                 margin-top: 8px;
             }
         }
@@ -149,7 +186,7 @@ header {
 .left-menu {
     display: flex;
     align-items: center;
-    
+
 
     @media(max-width: 767px) {
         justify-content: space-between;
@@ -170,6 +207,7 @@ header {
             margin-right: 0;
             display: flex;
             margin-left: -5px;
+
             button {
                 svg {
                     display: block;
@@ -183,23 +221,44 @@ header {
     .lang {
         color: #ffffff;
         margin-right: 20px;
-
+        position: relative;
+        
+        border: 1px solid transparent;
+        &.opened{
+            background: #fff;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    span{
+        color: #9d74a0;
+        font-weight: 300;
+    }
+    .fa {
+        color: #9d74a0;
+    }
+    .lang-drop{
+        opacity: 1;
+        pointer-events: auto;
+    }
+        }
         @media(max-width: 767px) {
             margin-right: 0;
             display: flex;
 
             button {
+                outline: none;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 min-width: 44px;
 
                 span {
+                    transition: .3s;
                     font-size: 14px;
                     line-height: .8;
                 }
 
                 .fa {
+                    transition: .3s;
                     font-size: 14px;
                     line-height: .6;
                 }
@@ -252,7 +311,8 @@ header {
             pointer-events: none;
             width: 346px;
             z-index: 2;
-            @media(max-width: 767px){
+
+            @media(max-width: 767px) {
                 left: 15px;
                 right: 15px;
                 top: 61px;
@@ -260,6 +320,7 @@ header {
                 width: auto;
                 max-width: 100%;
             }
+
             &.active {
                 opacity: 1;
                 pointer-events: auto;
@@ -315,10 +376,21 @@ header {
 .right-menu {
     display: flex;
     align-items: center;
-    @media(max-width: 767px){
+
+    @media(max-width: 767px) {
         max-width: 105px;
         margin-left: auto;
     }
+
+    .currency-item {
+        margin-right: .5em;
+
+        &:last-child {
+            margin-right: 0;
+            margin-left: .5em;
+        }
+    }
+
     .currency {
         font-family: "FuturaPT";
         font-size: 18px;
@@ -330,29 +402,32 @@ header {
         @media(max-width: 993px) {
             display: none;
         }
-        input{
+
+        input {
             position: absolute;
             width: 0;
             height: 0;
             overflow: hidden;
             opacity: 0;
-            &:checked{
-                &+span{
-                     color: #cba674;
+
+            &:checked {
+                &+span {
+                    color: #cba674;
                     letter-spacing: 0.45px;
                     text-decoration: underline;
                 }
-                   
-                
+
+
             }
-        
+
         }
+
         span {
             font-family: "FuturaPT";
-        font-size: 18px;
-        font-weight: 200;
-        line-height: 24px;
-        color: #ffffff;
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 24px;
+            color: #ffffff;
             transition: .3s;
 
             text-transform: uppercase;
@@ -376,6 +451,7 @@ header {
                 display: flex;
                 margin: 0;
                 margin-right: -5px;
+
                 svg {
                     display: block;
                     height: 18px;
@@ -396,7 +472,7 @@ header {
 
 .menu {
     background: transparent;
-    
+
     position: fixed;
     top: 0;
     left: 0;
@@ -478,9 +554,12 @@ header {
     .search,
     .lang,
     .catalog-trigger {
-        &>button, &>a {
+
+        &>button,
+        &>a {
             background: transparent;
             border: none;
+            outline: none;
         }
     }
 
@@ -506,18 +585,22 @@ header {
         pointer-events: none;
         transform: translateY(15px);
         transition: .3s;
-        @media(max-width: 767px){
+
+        @media(max-width: 767px) {
             top: 76px;
         }
-        @media(max-width: 680px){
+
+        @media(max-width: 680px) {
             bottom: 0;
-    height: calc(100vh - 76px);
-    overflow: auto;
+            height: calc(100vh - 76px);
+            overflow: auto;
         }
-        @media(max-width: 460px){
-    height: calc(100vh - 63px);
-    top: 63px;
+
+        @media(max-width: 460px) {
+            height: calc(100vh - 63px);
+            top: 63px;
         }
+
         &.active {
             opacity: 1;
             pointer-events: auto;
@@ -566,9 +649,11 @@ header {
                 font-weight: 400;
                 letter-spacing: 0.5px;
                 transition: .3s;
-                @media(max-width: 680px){
+
+                @media(max-width: 680px) {
                     max-width: 100%;
                 }
+
                 .fa {
                     margin-left: auto;
                     color: #9d74a0;
@@ -655,11 +740,13 @@ header {
                 z-index: 2;
             }
         }
-        .catalog-img{
-            @media(max-width: 991px){
+
+        .catalog-img {
+            @media(max-width: 991px) {
                 display: none;
             }
         }
+
         .sub-category {
             padding: 10px 0 23px;
             box-shadow: 0 4px 7px 1px rgba(0, 0, 0, 0.1);
@@ -671,14 +758,17 @@ header {
             top: 0;
             opacity: 0;
             pointer-events: none;
-            @media(max-width: 1199px) and (min-width: 992px){
+
+            @media(max-width: 1199px) and (min-width: 992px) {
                 width: 291px;
             }
-            @media(max-width: 680px){
+
+            @media(max-width: 680px) {
                 position: static;
                 width: 100%;
                 display: none;
             }
+
             .sub-category-item-wr {}
 
             .sub-category-item {
@@ -792,7 +882,8 @@ header {
             font-family: "PoiretOne";
             font-size: 22px;
             line-height: 1.15;
-            @media(max-width: 767px){
+
+            @media(max-width: 767px) {
                 font-size: 18px;
             }
         }
@@ -816,6 +907,7 @@ header {
 
             }
         }
+
         @media(max-width: 460px) {
             a {
                 max-width: 56px;
