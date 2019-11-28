@@ -123,7 +123,7 @@ $(".owl-carousel").owlCarousel({
 $(".offer-week").owlCarousel({
     items : 2,
     itemsDesktop :[1199,2],
-    itemsMobile: [479,2],
+    itemsMobile: [479,1],
     navigation: true,
     navigationText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
     
@@ -138,4 +138,19 @@ $(".lang button").click(function(){
         $(this).closest(".lang").removeClass("opened");  
     }
     
+})
+
+$(".more-btn").click(function(){
+    var descrParrent = $(this).closest(".descript");
+    var fullHeight = descrParrent.find(".descript-inner").innerHeight();
+    console.log(descrParrent)
+    console.log(fullHeight)
+    if(!(descrParrent.find(".descript-outer").hasClass("opened"))){
+descrParrent.find(".descript-outer").addClass("opened");
+    descrParrent.find(".descript-outer").css("height", `${fullHeight}px`)
+    }
+    else{
+        descrParrent.find(".descript-outer").removeClass("opened");
+        descrParrent.find(".descript-outer").css("height", ``) 
+    }
 })
