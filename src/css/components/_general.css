@@ -12,3 +12,7 @@ body{
 body.open-modal{
     overflow: hidden;
 }
+
+a{
+    text-decoration: none;
+}
