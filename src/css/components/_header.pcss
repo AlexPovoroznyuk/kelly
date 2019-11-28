@@ -90,7 +90,12 @@ header {
         background: #fff;
         padding-top: 0;
         padding-bottom: 0;
-
+        .right-menu .currency{
+            color: #000;
+            span{
+                color: #000;
+            }
+        }
         @media(max-width: 767px) {
             padding-top: 8px;
         }
@@ -173,7 +178,7 @@ header {
         }
 
     }
-
+    
     .scroll-content {
         position: absolute;
         opacity: 0;
@@ -643,7 +648,8 @@ header {
                         opacity: 1;
                         pointer-events: auto;
                         display: block;
-
+                        overflow: auto;
+    height: 625px;
 
                     }
                 }
@@ -656,7 +662,12 @@ header {
 
         .category {
             padding: 10px 0 23px;
-
+            a{
+                text-decoration: none;
+                &:hover, &:focus{
+                    text-decoration: none;
+                }                
+            }
             .category-item {
                 display: flex;
                 align-items: center;
@@ -707,7 +718,14 @@ header {
             box-shadow: 0 4px 7px 1px rgba(0, 0, 0, 0.1);
             background-color: #FAF4FA;
             width: 100%;
-
+            display: none;
+            a{
+                text-decoration: none;
+                &:hover, &:focus{
+                    color: #9d74a0;
+                text-decoration: none;
+                }
+            }
             .sub-item {
                 padding-left: 81px;
                 color: #5e5e5e;
@@ -717,11 +735,18 @@ header {
                 line-height: 50px;
                 letter-spacing: 0.4px;
                 transition: .3s;
-
+                a{
+                    text-decoration: none;
+                    &:hover, &:focus{
+                        color: #9d74a0;
+                    text-decoration: none;
+                    }
+                }
                 &:hover {
                     a {
                         color: #9d74a0;
                         text-decoration: none;
+                        
                     }
 
                 }
@@ -935,4 +960,22 @@ header {
             }
         }
     }
+}
+
+.sub-category-item{
+    a{
+        &:focus{
+          &+.sub-item-category{
+        display: block;
+       }  
+        }
+       } 
+        &:hover{
+           .sub-item-category{
+               display: block;
+           }
+           
+           
+        }
+    
 }
