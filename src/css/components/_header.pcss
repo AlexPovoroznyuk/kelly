@@ -71,6 +71,10 @@ header {
                 font-size: 18px;
     line-height: 24px;
     color: #9d74a0;
+    @media(max-width: 767px){
+        font-size: 14px;
+    line-height: 19px;
+    }
             }
         }
     }
@@ -99,9 +103,25 @@ header {
 
         .catalog {
             top: 97px;
+            @media(max-width: 767px){
+                top: 94px;
+            }
+            @media(max-width: 460px){
+                top: 82px;
+            }
 
         }
-
+        .checkout{
+            button{
+               color: #fff; 
+            }
+            
+        }
+        .back-busket{
+            button{
+                color: #9d74a0;
+            }
+        }
         .scrolled-line {
             opacity: 1;
             pointer-events: auto;
@@ -249,12 +269,12 @@ header {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                min-width: 44px;
+                min-width: 52px;
 
                 span {
                     transition: .3s;
                     font-size: 14px;
-                    line-height: .8;
+                    line-height: 19px;
                 }
 
                 .fa {
