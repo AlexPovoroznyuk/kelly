@@ -86,9 +86,19 @@
                 <div class="col-xs-5 col-md-4">
                     <div class="right-menu">
                         <div class="currency">
-                            <button>
-                                <span>usd</span> | <span class="second-currency">Uah</span>
-                            </button>
+                            <div class="currency-item">
+                                <label>
+                                    <input type="radio" name="currency">
+                                   <span>usd</span>
+                                </label>
+                            </div>
+                            |
+                            <div class="currency-item">
+                                <label>
+                                    <input type="radio" name="currency">
+                                    <span>Uah</span>
+                                </label>
+                            </div>
                         </div>
                         <div class="account-wr">
                             <div class="basket">
@@ -123,7 +133,7 @@
                                 @@include('./_basket.html')
                             </div>
                             <div class="favorite">
-                                <button>
+                                <a href="/pc-favorites.html">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="20" x="0px"
                                         y="0px" viewBox="0 0 471.7 471.7" style="enable-background:new 0 0 471.7 471.7;"
@@ -142,7 +152,7 @@
 		c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3C444.8,187.1,434,213.1,414.4,232.7z" />
                                         </g>
                                     </svg>
-                                </button>
+                                </a>
                             </div>
                             <div class="account">
                                 <button data-tab="login" data-modal="auth">
@@ -175,7 +185,7 @@
                 <div class="row">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-7">
+                            <div class="col-md-7 col-xs-12">
                                 <ul class="category list-unstyled">
                                     <li>
                                         <a href="#" class="category-item hover" data-item="gold">
@@ -220,7 +230,7 @@
                                 </ul>
 
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-5 catalog-img">
                                 <div class="category-img">
                                     <img src="img/pics/category-img.png" alt="">
                                 </div>

@@ -19,6 +19,9 @@ $(".search-btn").click(function(){
     if(!$(".search-container").hasClass("active")){
         $(".search-container").addClass("active");
     }
+    else{
+        $(".search-container").removeClass("active");
+    }
 });
 
 $(".search-close-btn").click(function(){
@@ -31,15 +34,21 @@ $(".category-item").mouseenter(function(){
     $(".category-item").removeClass("hover");
     $(this).addClass("hover")
 });
+$(".category-item").click(function(){
+    $(".category-item").removeClass("hover");
+    $(this).addClass("hover")
+});
 
 $(".catalog-trigger button").click(function(){
     if(!$(".menu").hasClass("open-catalog")){
     $(".menu").addClass("open-catalog");
     $(".catalog").addClass("active");
+    $("body").addClass("modal-open");
 }
 else{
     $(".menu").removeClass("open-catalog");
     $(".catalog").removeClass("active");
+    $("body").removeClass("modal-open");
 }
 })
 
@@ -61,10 +70,12 @@ $("[data-tab]").click(function(e){
     $(".modal-tab, .modal-auth-form").removeClass("active");
     $(`.modal-tab[data-tab="${activeTab}"]`).addClass("active");
     $(`[data-tab-form="${activeTab}"]`).addClass("active");
+    $("body").addClass("modal-open");
 })
 
 $(".modal-close").click(function(){
-    $(".modal").removeClass("active")
+    $(".modal").removeClass("active");
+    $("body").removeClass("modal-open");
 })
 
 $("[data-modal]").click(function(e){
@@ -72,6 +83,7 @@ $("[data-modal]").click(function(e){
     var activeModal = $(this).attr("data-modal");
     $(".modal").removeClass("active");
     $(`#${activeModal}`).addClass("active");
+    $("body").addClass("modal-open");
 })
 $(".stars-item input").change(function(){
     var selectRating = $(this).attr('value');
