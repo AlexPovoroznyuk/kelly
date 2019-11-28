@@ -36,7 +36,11 @@ img{
         align-items: center;
     }
 
-    .show-label {}
+    .show-label {
+        @media(max-width: 600px){
+            display: none;
+        }
+    }
 
     .show-dropdown {
         min-width: 65px;
@@ -60,7 +64,11 @@ img{
     margin-right: 15px;
 
 }
-
+.sort-label{
+    @media(max-width: 600px){
+        display: none;
+    }
+}
 .sort {
     display: flex;
 
@@ -96,7 +104,24 @@ img{
         display: flex;
         margin-bottom: 2px;
     }
-
+    .filter-button{
+        cursor: pointer;
+        display: none;
+        @media(max-width: 600px){
+            display: block;
+        }
+        span{
+            color: #97729b;
+            font-family: "FuturaPT";
+            font-size: 14px;
+            font-weight: 300; 
+        }
+        i{
+            margin-left: 5px;
+            color: #97729b;
+            font-size: 14px;
+        }
+    }
     .selected-filters-item {
         display: flex;
         align-items: center;
