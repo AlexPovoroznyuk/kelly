@@ -111,6 +111,7 @@ $(".owl-carousel").owlCarousel({
     items : 4,
     itemsDesktop :[1199,3],
     itemsDesktopSmall:[979,3],
+    itemsMobile: [479,2],
     navigation: true,
     navigationText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
     
@@ -119,7 +120,7 @@ $(".owl-carousel").owlCarousel({
 $(".offer-week").owlCarousel({
     items : 2,
     itemsDesktop :[1199,2],
-
+    itemsMobile: [479,2],
     navigation: true,
     navigationText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
     
