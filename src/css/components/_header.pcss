@@ -311,7 +311,8 @@ header {
             pointer-events: none;
             width: 346px;
             z-index: 2;
-            @media(max-width: 767px){
+
+            @media(max-width: 767px) {
                 left: 15px;
                 right: 15px;
                 top: 61px;
@@ -319,6 +320,7 @@ header {
                 width: auto;
                 max-width: 100%;
             }
+
             &.active {
                 opacity: 1;
                 pointer-events: auto;
@@ -400,29 +402,32 @@ header {
         @media(max-width: 993px) {
             display: none;
         }
-        input{
+
+        input {
             position: absolute;
             width: 0;
             height: 0;
             overflow: hidden;
             opacity: 0;
-            &:checked{
-                &+span{
-                     color: #cba674;
+
+            &:checked {
+                &+span {
+                    color: #cba674;
                     letter-spacing: 0.45px;
                     text-decoration: underline;
                 }
-                   
-                
+
+
             }
-        
+
         }
+
         span {
             font-family: "FuturaPT";
-        font-size: 18px;
-        font-weight: 200;
-        line-height: 24px;
-        color: #ffffff;
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 24px;
+            color: #ffffff;
             transition: .3s;
 
             text-transform: uppercase;
@@ -549,7 +554,9 @@ header {
     .search,
     .lang,
     .catalog-trigger {
-        &>button, &>a {
+
+        &>button,
+        &>a {
             background: transparent;
             border: none;
             outline: none;
@@ -578,18 +585,22 @@ header {
         pointer-events: none;
         transform: translateY(15px);
         transition: .3s;
-        @media(max-width: 767px){
+
+        @media(max-width: 767px) {
             top: 76px;
         }
-        @media(max-width: 680px){
+
+        @media(max-width: 680px) {
             bottom: 0;
-    height: calc(100vh - 76px);
-    overflow: auto;
+            height: calc(100vh - 76px);
+            overflow: auto;
         }
-        @media(max-width: 460px){
-    height: calc(100vh - 63px);
-    top: 63px;
+
+        @media(max-width: 460px) {
+            height: calc(100vh - 63px);
+            top: 63px;
         }
+
         &.active {
             opacity: 1;
             pointer-events: auto;
@@ -638,9 +649,11 @@ header {
                 font-weight: 400;
                 letter-spacing: 0.5px;
                 transition: .3s;
-                @media(max-width: 680px){
+
+                @media(max-width: 680px) {
                     max-width: 100%;
                 }
+
                 .fa {
                     margin-left: auto;
                     color: #9d74a0;
@@ -727,11 +740,13 @@ header {
                 z-index: 2;
             }
         }
-        .catalog-img{
-            @media(max-width: 991px){
+
+        .catalog-img {
+            @media(max-width: 991px) {
                 display: none;
             }
         }
+
         .sub-category {
             padding: 10px 0 23px;
             box-shadow: 0 4px 7px 1px rgba(0, 0, 0, 0.1);
@@ -743,14 +758,17 @@ header {
             top: 0;
             opacity: 0;
             pointer-events: none;
-            @media(max-width: 1199px) and (min-width: 992px){
+
+            @media(max-width: 1199px) and (min-width: 992px) {
                 width: 291px;
             }
-            @media(max-width: 680px){
+
+            @media(max-width: 680px) {
                 position: static;
                 width: 100%;
                 display: none;
             }
+
             .sub-category-item-wr {}
 
             .sub-category-item {
@@ -889,6 +907,7 @@ header {
 
             }
         }
+
         @media(max-width: 460px) {
             a {
                 max-width: 56px;
