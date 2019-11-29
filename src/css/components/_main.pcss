@@ -13,7 +13,8 @@ main {
 
         .to-be-item {
             position: relative;
-            @media(max-width: 991px){
+
+            @media(max-width: 991px) {
                 padding-top: 4.5em;
                 font-size: 2.1em;
             }
@@ -21,7 +22,8 @@ main {
 
         .to-be-item:nth-child(1) {
             padding-top: 9em;
-            @media(max-width: 991px){
+
+            @media(max-width: 991px) {
                 padding-top: 8em;
             }
         }
@@ -100,9 +102,11 @@ main {
         padding: 0 15px;
         max-width: 775px;
         margin: 0 auto 8em;
-        @media(max-width: 992px){
+
+        @media(max-width: 992px) {
             font-size: 1.3em;
         }
+
         p {
             font-size: 1.8em;
             text-align: justify;
@@ -140,17 +144,18 @@ main {
 
     .offer {
         .description {
-            
-            @media(max-width: 567px){
-                
-font-family: "FuturaPT";
-font-size: 2.5em;
-line-height: 1.27;
-letter-spacing: 0.45px;
-text-align: center;
-margin-bottom: 4em;
+
+            @media(max-width: 567px) {
+
+                font-family: "FuturaPT";
+                font-size: 2.5em;
+                line-height: 1.27;
+                letter-spacing: 0.45px;
+                text-align: center;
+                margin-bottom: 4em;
             }
         }
+
         .col-md-6 {
             padding: 0;
         }
@@ -160,7 +165,8 @@ margin-bottom: 4em;
             color: #38404a;
             font-family: "PoiretOne";
             font-weight: 200;
-            @media(max-width: 567px){
+
+            @media(max-width: 567px) {
                 margin-bottom: .3em;
                 text-align: center;
 
@@ -168,13 +174,15 @@ margin-bottom: 4em;
         }
 
         .back-img {
-            @media(max-width: 991px){
+            @media(max-width: 991px) {
                 margin-bottom: 2em;
-                display: none;  
+                display: none;
             }
+
             img {
                 width: 110%;
-                @media(max-width: 991px){
+
+                @media(max-width: 991px) {
                     width: 100%;
                 }
             }
@@ -185,126 +193,137 @@ margin-bottom: 4em;
             color: #9d74a0;
             letter-spacing: 0.5px;
             font-weight: 400;
-            
+
         }
     }
-}   
-.offer-week-wr{
+}
+
+.offer-week-wr {
     padding: 0 15px;
 }
-    .offer-week {
-        .owl-wrapper-outer {
-            width: calc(100% + 2px);
-            padding: 15px 0;
+
+.offer-week {
+    .owl-wrapper-outer {
+        width: calc(100% + 2px);
+        padding: 15px 0;
+    }
+
+    .owl-buttons {
+        position: absolute;
+        top: -40px;
+        right: 20px;
+        display: flex;
+
+        @media(max-width: 567px) {
+            right: 0;
+            left: 0;
+            justify-content: center;
+        }
+    }
+
+    
+
+    .owl-prev,
+    .owl-next {
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 26px;
+        height: 26px;
+        border: 1px solid #9d74a0;
+        background-color: #ffffff;
+        color: #9d74a0;
+        transition: .3s;
+
+        @media(max-width: 567px) {
+            margin: 0;
         }
 
-        .owl-buttons {
-            position: absolute;
-            top: -40px;
-            right: 20px;
-            display: flex;
-            @media(max-width: 567px){
-                right: 0;
-                left: 0;
-                justify-content: center;
-            }
+        &:hover {
+            background-color: #9d74a0;
+            color: #ffffff;
         }
 
+        .fa {
+            margin: 0 0 2px 2px;
+        }
+
+    }
+
+    .owl-prev {
+        margin-right: -1px;
+    }
+}
+
+.new-items {
+    .owl-wrapper-outer {
+        padding: 15px 0;
+        width: calc(100% + 2px);
+
+    }
+
+    .owl-buttons {
+        @media(max-width: 567px){
+            display: none;
+        }
         .owl-prev,
         .owl-next {
-            font-size: 22px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-size: 40px;
+            position: absolute;
+            top: 15px;
+            bottom: calc(1.75em - 15px);
             margin: auto;
-            width: 26px;
-            height: 26px;
-            border: 1px solid #9d74a0;
-            background-color: #ffffff;
-            color: #9d74a0;
-            transition: .3s;
-            @media(max-width: 567px){
-                margin: 0;
-            }
-            &:hover{
-                background-color: #9d74a0 ;
-                color:#ffffff;
-            }
-            .fa {
-                margin: 0 0 2px 2px;
-            }
+            height: 60px;
+            color: #c6c6c6;
 
         }
 
         .owl-prev {
-            margin-right: -1px;
+            left: 30px;
+        }
+
+        .owl-next {
+            right: 30px;
         }
     }
+}
 
-    .new-items {
-        .owl-wrapper-outer {
-            padding: 15px 0;
-            width: calc(100% + 2px);
+.product-wr {
+    font-size: 10px;
+    height: 42em;
 
-        }
+    @media(max-width: 991px) {
+        height: auto;
+    }
+}
 
-        .owl-buttons {
 
-            .owl-prev,
-            .owl-next {
-                font-size: 40px;
-                position: absolute;
-                top: 15px;
-                bottom: calc(1.75em - 15px);
-                margin: auto;
-                height: 60px;
-                color: #c6c6c6;
 
-            }
 
-            .owl-prev {
-                left: 30px;
-            }
+.novelty {
+    margin-bottom: 9em;
 
-            .owl-next {
-                right: 30px;
-            }
-        }
+    .col-md-3 {
+        padding: 0;
+        height: 45.4em;
     }
 
-    .product-wr {
-        font-size: 10px;
-        height: 42em;
-        @media(max-width: 991px){
-            height: auto;
+    .caption {
+        margin: 7.6em 0 10em;
+        color: #38404a;
+        text-align: center;
+
+        p {
+            font-size: 5em;
+            font-family: "FuturaPT";
+            font-weight: 200;
         }
     }
+}
 
-
-    
-
-    .novelty {
-        margin-bottom: 9em;
-
-        .col-md-3 {
-            padding: 0;
-            height: 45.4em;
-        }
-
-        .caption {
-            margin: 7.6em 0 10em;
-            color: #38404a;
-            text-align: center;
-
-            p {
-                font-size: 5em;
-                font-family: "FuturaPT";
-                font-weight: 200;
-            }
-        }
-    }
-
-.descript-outer{
+.descript-outer {
     overflow: hidden;
     height: 23em;
     transition: .3s ease-in;

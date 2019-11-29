@@ -16,3 +16,54 @@ body.open-modal{
 a{
     text-decoration: none;
 }
+
+.hidden-lnk{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.owl-pagination {
+    display: none;
+    @media(max-width: 567px){
+      display: flex;
+    justify-content: center;
+    .owl-page {
+        &:not(:last-child){
+            padding-right: 14px;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                right: 2px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+width: 10px;
+height: 2px;
+background: #cacaca;
+            }
+        }
+        span{
+          width: 8px;
+        height: 8px;
+        border: 1px solid #cacaca;
+        border-radius: 50%;  
+        display: block;
+        }
+        
+
+        &.active {
+            span{
+              border: 1px solid #9d74a0;
+            background-color: #9d74a0;  
+            }
+            
+        }
+    }  
+    }
+    
+}
