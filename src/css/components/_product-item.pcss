@@ -200,11 +200,16 @@
         @media(max-width: 991px){
             transform: translateY(0);
         }
-
+        img{
+            max-width: 100%;
+        }
         
     }
     .item-button {
-        transform: translateY(-13px);
+        @media(min-width: 992px){
+         transform: translateY(-13px);   
+        }
+        
         display: flex;
         margin: 0 auto;
         outline: none;
@@ -294,4 +299,7 @@
             }
         }
     
+}
+.product-wr{
+    position: relative;
 }

@@ -212,9 +212,13 @@
         padding-top: 3.5em;
         width: calc(33% - 30px);
         border: 1px dashed #ffffff;
+        position: relative;
         @media(max-width: 567px){
             margin: 10px 0;
         width: calc(50% - 10px);
+        }
+        .transparent-lnk{
+            z-index: 2;
         }
         &:hover{
             box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.16);

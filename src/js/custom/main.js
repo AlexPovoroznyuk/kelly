@@ -182,3 +182,24 @@ $(document).ready(function() {
 		
 	});
 });
+
+$(".o-l-item").click(function(){
+    $(".o-l-item").removeClass("open");
+    if(!($(this).hasClass("open"))){
+       $(this).addClass("open"); 
+    }
+    else{
+        $(this).removeClass("open"); 
+    }    
+
+})
+
+$(".custom-row").click(function(){
+    $(".custom-row").removeClass("open-row");
+    if(!($(this).hasClass("open-row"))){
+    $(this).addClass("open-row");
+}
+else{
+    $(".custom-row").removeClass("open-row");
+}
+})
