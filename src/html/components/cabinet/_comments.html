@@ -1,8 +1,10 @@
-<div class="pc-comments @@display adaptive-display" >
+<div class="pc-comments @@display" >
     <div class="caption">
         <span>Мої коментарі</span>
+        <a class="transparent-lnk mobile-show" href="#"></a>
     </div>
     @@include('_comment-item.html',{
+        "open": "open",
         "img": "img/pics/favorites-ring.png",
         "name": "Перстень Назва",
         "number": "арт. 12354",
@@ -10,6 +12,7 @@
         "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     })
     @@include('_comment-item.html',{
+        "open": "",
         "img": "img/pics/favorites-ring.png",
         "name": "Перстень Назва",
         "number": "арт. 12354",
