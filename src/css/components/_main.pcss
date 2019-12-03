@@ -311,10 +311,18 @@ main {
     }
 
     .caption {
-        margin: 7.6em 0 10em;
+        margin: 7.6em 0 3em;
         color: #38404a;
         text-align: center;
-
+        position: relative;
+        &::after{
+            content: '';
+            width: 1px;
+            height: 4.8em;
+            background-color: #9d74a0;
+            margin: 0 auto 3em;
+            display: block;
+        }
         p {
             font-size: 5em;
             font-family: "FuturaPT";
@@ -325,6 +333,7 @@ main {
 
 .descript-outer {
     overflow: hidden;
-    height: 23em;
+    height: 20em;
+    margin-bottom: 2em;
     transition: .3s ease-in;
 }

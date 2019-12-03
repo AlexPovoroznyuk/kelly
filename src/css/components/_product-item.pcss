@@ -96,14 +96,15 @@
         }
 
         button {}
-
+        .stars,.item-button {
+            opacity: 1;
+            transform: translateY(0);
+        }
         .item-content {
             transform: translateY(0);
 
-            .stars,
-            .item-button {
-                opacity: 1;
-            }
+            
+            
         }
 
     }
@@ -199,10 +200,16 @@
         @media(max-width: 991px){
             transform: translateY(0);
         }
-
+        img{
+            max-width: 100%;
+        }
         
     }
     .item-button {
+        @media(min-width: 992px){
+         transform: translateY(-13px);   
+        }
+        
         display: flex;
         margin: 0 auto;
         outline: none;
@@ -292,4 +299,7 @@
             }
         }
     
+}
+.product-wr{
+    position: relative;
 }
