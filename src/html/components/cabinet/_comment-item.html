@@ -1,19 +1,38 @@
-<div class="comment-item">
-    <div class="comment-header">
-        <div class="left-part">
-            <div class="icon">
-                <img src=@@img alt="" />
+<div class="comment-item @@open">
+    <div class="comment-header-no-adaptive">
+        <div class="comment-header">
+            <div class="left-part">
+                <div class="icon">
+                    <img src=@@img alt="" />
+                </div>
+                <div class="info">
+                    <p class="item-text">@@name</p>
+                    <p class="item-text">@@number</p>
+                </div>
             </div>
-            <div class="info">
-                <p class="item-text">@@name</p>
-                <p class="item-text">@@number</p>
+            <div class="item-date">
+                <span class="item-text">@@date</span>
             </div>
+        </div> 
+        <div class="comment-message">
+            <p>@@message</p>
         </div>
-        <div class="item-date">
-            <span class="item-text">@@date</span>
+    </div>
+    <div class="comment-header-adaptive">
+        <div class="comment-header ">
+            <div class="left-part">
+                <div class="icon">
+                    <img src=@@img alt="" />
+                </div>
+                <div class="info">
+                    <p class="item-text">@@name</p>
+                    <p class="item-text">@@number</p>
+                    <span class="item-text">@@date</span>
+                </div>
+            </div>
+        </div> 
+        <div class="comment-message">
+            <p>@@message</p>
         </div>
-    </div> 
-    <div class="comment-message">
-        <p>@@message</p>
     </div>
 </div>
