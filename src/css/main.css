@@ -51,3 +51,5 @@ Main style file
 @import "./components/_pagination.pcss";
 @import "./components/_dropdown.pcss";
 
+@import "./components/pr.pcss";
+

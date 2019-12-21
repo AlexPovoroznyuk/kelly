@@ -1,4 +1,189 @@
 .product-final{
+
+    .xd_stickers_wrapper{
+/* display: none; */
+    }
+
+    h1{
+      color: #313131;
+    font-family: PoiretOne;
+    font-size: 46px;
+    font-weight: 400; 
+    margin-bottom: 15px; 
+    }
+    
+    .thumbnails{
+        display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+    &>li{
+        width: 100%;
+        display: block;
+    }
+    li{
+        list-style: none;
+    }
+    .thumbnail{
+        width: 100%;
+        display: block;
+        border-radius: 0;
+    }
+    .small-thumbnail{
+        width: 16.66666667%;
+        position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+        ul{
+            padding: 0;
+            a{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    }
+    .articul{
+        color: #a9a9a9;
+    font-family: "FuturaPT";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    }
+
+    .availability{
+        color: #70c54f;
+    font-family: FuturaPT;
+    font-size: 1.8em;
+    font-weight: 400;
+    }
+
+    .params-wr{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .price{
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 30px;
+        h2{
+            color: #9d74a0;
+            font-family: FuturaPT;
+            font-size: 26px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .old-price{
+            color: #a9a9a9;
+    font-size: 18px;
+    text-decoration: line-through;
+        }
+    }
+    .rating{
+        p{
+            display: flex;
+        }
+        .fa-stack {
+            
+            width: 1.8em;
+            height: 1.6em;
+            &:hover{
+                .fa-stack-1x{
+                    &.hidden-star{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .fa-stack-1x{
+            color: #9d74a0;
+            font-size: 1.6em;
+            &.hidden-star{
+                opacity: 0;
+                transition: .3s;
+            }
+        }
+    }
+    .review-quantity{
+        margin-left: .7em;
+        color: #398bff;
+        font-family: FuturaPT;
+        font-size: 1.6em;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+
+    .to-basked{
+        padding: 1em 4.5em;
+        font-size: inherit;
+    border-radius: 3px;
+    background-color: #9d74a0;
+    background-image: linear-gradient(0deg,rgba(83,91,94,.09),hsla(0,0%,100%,.09) 10%,rgba(78,82,84,.09) 51%,hsla(0,0%,99%,.09) 84%,rgba(83,91,94,.09)),linear-gradient(0deg,rgba(101,51,96,.53),rgba(140,96,144,.53));
+    &:hover, &:focus{
+        background-color: #9d74a0;
+        border: none;
+    }
+    &:active{
+        background-color: #9d74a0;
+        border: none;
+        &:hover, &:focus{
+            background-color: #9d74a0;
+            border: none;
+        }
+    }
+    span{
+        color: #fff;
+    font-family: FuturaPT;
+    font-size: 1.8em;
+    font-weight: 300;
+    }
+    i {
+        font-size: 1.8em;
+        color: #fff;
+        margin-left: .6em;
+    }
+    }
+    .to-favorite{
+        padding: 1em 4.5em;
+    border-radius: 3px;
+    font-size: inherit;
+    display: flex;
+    align-items: center;
+    &:hover, &:focus{
+        background-color: transparent;
+        border: none;
+    }
+    &:active{
+        background-color: transparent;
+        border: none;
+        &:hover, &:focus{
+            background-color: transparent;
+            border: none;
+        }
+    }
+    span{
+        color: #7e7e7e;
+    font-family: FuturaPT;
+    font-size: 1.8em;
+    font-weight: 300;
+    line-height: .7;
+    display: block;
+    }
+    i{
+        font-size: 1.8em;
+    color: #7e7e7e;
+    margin-left: .6em;
+    }
+    }
+    .button-wr{
+        display: flex;
+        justify-content: space-between;
+        button{
+            width: 50%;
+        }
+    }
+
+
     font-size: calc(0.25vw + 5px);
     padding-top: 100px;
     margin-bottom: 10em;
